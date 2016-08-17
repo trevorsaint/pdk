@@ -1,0 +1,54 @@
+// Action bar
+// ==========================================================================
+
+$module: 'action-bar';
+
+.#{$module} {
+  
+  &-item {
+    padding: em(15);
+    overflow: hidden;
+    
+    &-start {
+      background-color: #d5e8f3;
+      box-shadow: inset 0 -2px 0 0 #96c6e2;
+    }
+    
+    &.is-complete {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+  }
+  
+  &-start {
+    font-weight: bold;
+  }  
+  
+  /*&-heading {
+    overflow: hidden;
+  }  
+  
+  &-content {
+    float: right;
+  }*/  
+  
+  
+  &-heading {
+    float: left;
+  }  
+  
+  &-content {
+    overflow: hidden;
+  }
+  
+  
+}
+
+/*
+  
+HTML Usage
+  
+
+
+*/

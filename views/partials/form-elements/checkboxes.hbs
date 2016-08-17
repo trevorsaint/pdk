@@ -1,0 +1,107 @@
+  <section aria-labelledby="checkboxes">
+    
+    <h3 class="heading-medium" id="checkboxes">Checkboxes</h3>
+    
+    <ul class="text list list-bullet">
+      <li>use these to select either on/off toggles or multiple selections</li>
+      <li>make it clear with words when users can select one or multiple options</li>
+    </ul>
+    
+    <h4 class="heading-small">Stacked checkboxes</h4>
+    
+    <div class="example">      
+      
+      <h3 class="heading-medium">Which types of waste do you transport regularly?</h3>
+      
+      <p>Select all that apply</p>      
+      
+      <form class="form">
+        
+        <fieldset>
+
+          <legend class="visuallyhidden">Which types of waste do you transport regularly?</legend>
+      
+          <label class="block-label" for="waste-type-1">
+            <input type="checkbox" id="waste-type-1" name="waste-types" value="waste-animal">
+            Waste from animal carcasses
+          </label>
+          
+          <label class="block-label" for="waste-type-2">
+            <input type="checkbox" id="waste-type-2" name="waste-types" value="waste-mines">
+            Waste from mines or quarries
+          </label>
+          
+          <label class="block-label" for="waste-type-3">
+            <input type="checkbox" id="waste-type-3" name="waste-types" value="waste-farm-agricultural">
+            Farm or agricultural waste
+          </label>
+      
+        </fieldset>
+        
+      </form>
+      
+    </div>
+    
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;h3 class=&#x22;heading-medium&#x22;&#x3E;Which types of waste do you transport regularly?&#x3C;/h3&#x3E;
+        
+  &#x3C;p&#x3E;Select all that apply&#x3C;/p&#x3E; &#x3E;
+  
+  &#x3C;fieldset&#x3E;
+  
+    &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;Which types of waste do you transport regularly?&#x3C;/legend&#x3E;
+  
+    &#x3C;label class=&#x22;block-label&#x22; for=&#x22;waste-type-1&#x22;&#x3E;
+      &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;waste-type-1&#x22; name=&#x22;waste-types&#x22; value=&#x22;waste-animal&#x22;&#x3E;
+      Waste from animal carcasses
+    &#x3C;/label&#x3E;
+    
+    &#x3C;label class=&#x22;block-label&#x22; for=&#x22;waste-type-2&#x22;&#x3E;
+      &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;waste-type-2&#x22; name=&#x22;waste-types&#x22; value=&#x22;waste-mines&#x22;&#x3E;
+      Waste from mines or quarries
+    &#x3C;/label&#x3E;
+    
+    &#x3C;label class=&#x22;block-label&#x22; for=&#x22;waste-type-3&#x22;&#x3E;
+      &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;waste-type-3&#x22; name=&#x22;waste-types&#x22; value=&#x22;waste-farm-agricultural&#x22;&#x3E;
+      Farm or agricultural waste
+    &#x3C;/label&#x3E;
+  
+  &#x3C;/fieldset&#x3E;
+    </code></pre></div>
+    
+    <h4 class="heading-small">Inline checkboxes</h4>
+    
+    <ul class="text list list-bullet">
+      <li>large hit areas aren&rsquo;t always appropriate</li>
+      <li>only pre&ndash;select options if there&rsquo;s a strong, user&ndash;centred reason to</li>
+    </ul>
+    
+    <div class="example">     
+      
+      <form class="form">
+        
+        <label class="form-label" for="telephone-number">Enter your telephone number</label>
+        <input class="form-control" type="text" id="telephone-number" name="telephone-number">
+        
+        <label class="form-checkbox" for="checkbox-telephone-number">
+          <input id="checkbox-telephone-number" type="checkbox" name="by-text-phone" value="true">
+          I need to be contacted using a text phone
+        </label>
+        
+      </form>
+      
+    </div>
+    
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;label class=&#x22;form-label&#x22; for=&#x22;telephone-number&#x22;&#x3E;Enter your telephone number&#x3C;/label&#x3E;
+  &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;telephone-number&#x22; name=&#x22;telephone-number&#x22;&#x3E;
+  
+  &#x3C;label class=&#x22;form-checkbox&#x22; for=&#x22;checkbox-telephone-number&#x22;&#x3E;
+    &#x3C;input id=&#x22;checkbox-telephone-number&#x22; type=&#x22;checkbox&#x22; name=&#x22;by-text-phone&#x22; value=&#x22;true&#x22;&#x3E;
+    I need to be contacted using a text phone
+  &#x3C;/label&#x3E;
+    </code></pre></div>
+    
+  </section>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

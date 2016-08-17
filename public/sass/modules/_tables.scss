@@ -1,0 +1,34 @@
+// Tables
+// ==========================================================================
+
+$module: 'table';
+
+.#{$module} {
+  margin-bottom: em(20); 
+
+  .last {
+    padding-right: 0;
+    text-align: right;  
+  }
+  
+  &-noborders {
+    
+    tbody {
+    
+      th, td {
+        border-bottom: 0;
+      }
+    
+    }
+    
+  }
+  
+  &-valign-top {
+      
+    th, td {
+      vertical-align: top;
+    }
+    
+  }
+ 
+}

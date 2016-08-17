@@ -1,0 +1,76 @@
+  <section aria-labelledby="contact-info">
+  
+    <h3 class="heading-medium" id="contact-info">Contact info</h3>
+    
+    <ul class="text list list-bullet">
+      <li>includes schema information (semantic vocabulary) &ndash; <a href="//schema.org" rel="external">Schema.org</a></li>
+      <li><a href="//search.google.com/structured-data/testing-tool" rel="external">Google Data Testing Tool</a></li>
+    </ul>
+    
+    <div class="example">
+   
+      <div class="contact-info" itemtype="http://schema.org/Person" itemscope>
+        <div itemprop="jobTitle">Supervisor officer</div>
+        <div class="bold-xsmall" itemprop="name">DC Amelia Hicks</div>
+        <div class="font-xsmall" itemprop="telephone">0151 123 4567</div>
+        <a class="font-xsmall" itemprop="email" href="mailto:hicksa@liverpool.police.uk">hicksa@liverpool.police.uk</a>
+      </div>
+ 
+    </div>
+  
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;contact-info&#x22; itemtype=&#x22;http://schema.org/Person&#x22; itemscope&#x3E;
+    &#x3C;div itemprop=&#x22;jobTitle&#x22;&#x3E;Supervisor officer&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;bold-xsmall&#x22; itemprop=&#x22;name&#x22;&#x3E;DC Amelia Hicks&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;font-xsmall&#x22; itemprop=&#x22;telephone&#x22;&#x3E;0151 123 4567&#x3C;/div&#x3E;
+    &#x3C;a class=&#x22;font-xsmall&#x22; itemprop=&#x22;email&#x22; href=&#x22;mailto:&#x22;&#x3E;hicksa@liverpool.police.uk&#x3C;/a&#x3E;
+  &#x3C;/div&#x3E;
+  </code></pre></div>
+    
+    <div class="example">
+   
+      <div class="contact-info">
+        
+        <h3 class="bold-xsmall">Your organisation</h3>
+   
+        <div itemtype="http://schema.org/LocalBusiness" itemscope>
+         
+         <span itemprop="name">Slater and Gordon (UK) LLP</span>
+         
+         <div itemtype="http://schema.org/PostalAddress" itemprop="address" itemscope>
+           <div itemprop="streetAddress">Suite 3.1 <br> Third Floor <br> Exchange Court <br> 1 Dale Street</div>
+           <div itemprop="addressLocality">Liverpool</div>
+           <div itemprop="postalCode">L2 2ET</div>
+         </div>
+         
+        </div>
+      
+      </div>
+ 
+    </div>
+    
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;contact-info&#x22;&#x3E;
+    
+    &#x3C;h3 class=&#x22;bold-xsmall&#x22;&#x3E;Your organisation&#x3C;/h3&#x3E;
+  
+    &#x3C;div itemtype=&#x22;http://schema.org/LocalBusiness&#x22; itemscope&#x3E;
+     &#x3C;span itemprop=&#x22;name&#x22;&#x3E;Slater and Gordon (UK) LLP&#x3C;/span&#x3E;
+     &#x3C;div itemtype=&#x22;http://schema.org/PostalAddress&#x22; itemprop=&#x22;address&#x22; itemscope&#x3E;
+       &#x3C;div itemprop=&#x22;streetAddress&#x22;&#x3E;
+        Suite 3.1 &#x3C;br&#x3E; 
+        Third Floor &#x3C;br&#x3E; 
+        Exchange Court &#x3C;br&#x3E; 
+        1 Dale Street
+       &#x3C;/div&#x3E;
+       &#x3C;div itemprop=&#x22;addressLocality&#x22;&#x3E;Liverpool&#x3C;/div&#x3E;
+       &#x3C;div itemprop=&#x22;postalCode&#x22;&#x3E;L2 2ET&#x3C;/div&#x3E;
+     &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+  
+  &#x3C;/div&#x3E;
+  </code></pre></div>
+  
+  </section>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

@@ -1,0 +1,201 @@
+  <section aria-labelledby="tabs-pane">
+  
+    <h3 class="heading-medium" id="tabs-pane">Tabs pane</h3>
+    
+    <p class="text">A tabs pane built on <abbr title="Plain Old Semantic HTML">POSH</abbr> and enhanced with <abbr title="Accessible Rich Internet Applications">ARIA</abbr> via javascript. The tabs pane is also progressively enhanced and works without javascript.</p>
+    
+    <div class="example">
+ 
+      <div class="tabs tabs-horizontal">
+        
+        <div class="tabs-header">
+          
+          <ul class="list">
+            <li><a href="#before-you-start">Before you start</a></li>
+            <li><a href="#need-to-know">Need to know</a></li>
+            <li><a href="#ways-to-apply">Ways to apply</a></li>
+          </ul>
+          
+        </div>
+        
+        <div class="tabs-content">
+          
+          <section id="before-you-start">
+            
+            <h3 class="heading-medium">Before you start</h3>
+            
+            <div class="text">
+            
+              <p>To get your first provisional driving licence online for a car, motorcycle or moped you must:</p>
+                
+              <ul class="list list-bullet">
+                <li>be a resident of Great Britain &ndash; there&rsquo;s a different service in <a href="http://www.nidirect.gov.uk/applying-for-a-provisional-driving-licence" rel="external">Northern Ireland</a></li>
+                <li>meet the minimum age requirement</li>
+                <li>meet the <a href="/driving-eyesight-rules">minimum eyesight requirement</a></li>
+                <li>not be prevented from driving for any reason</li>
+                <li>pay &pound;50 by MasterCard, Visa, Electron, Maestro or Delta debit or credit card</li>
+                <li>have a valid <abbr title="United Kngdom">UK</abbr> passport or <a href="/driving-licence-application-identity-documents">other form of identity</a></li>
+                <li>have your National Insurance number if known</li>
+                <li>provide addresses where you’ve lived for the last 3 years</li>
+              </ul>
+            
+            </div>
+            
+          </section>
+          
+          <section id="need-to-know">
+            
+            <h3 class="heading-medium">Need to know</h3>
+            
+            <div class="text">
+            
+              <ul class="list list-bullet">
+                <li>proof of identification required</li>
+                <li>3 years of address details required</li>
+                <li>debit or credit card required</li>
+              </ul>
+            
+            </div>
+            
+          </section>
+          
+          <section id="ways-to-apply">
+            
+            <h3 class="heading-medium">Ways to apply</h3>
+            
+            <div class="text">
+              
+              <p>You can apply by post by completing a D1 application form, which you can get from the <a href="#"><abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr> form ordering service</a> or from a Post Office.</p>
+            
+              <p>You&rsquo;ll also need to include:</p>
+              
+              <ul class="list list-bullet">
+                <li>original documentation confirming your identity</li>
+                <li>a colour <a href="/photos-for-passports">passport&ndash;style photograph</a></li>
+                <li>the fee of &pound;50 by cheque or postal order payable to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr> (do not send cash)</li>
+              </ul>
+              
+              <p>Send your completed application and payment to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr>, Swansea, SA99 1AD.</p>
+              
+              <p>If you&rsquo;re including non&ndash;<abbr title="United Kingdom">UK</abbr> identity documents send your application and payment to <abbr title="Driver and Vehicle Licensing Agency">DVLA</abbr>, Swansea, SA99 1AF.</p>
+              
+            </div>
+            
+          </section>
+        
+        </div>
+        
+      </div>
+ 
+    </div>
+    
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;tabs tabs-horizontal&#x22;&#x3E;
+    
+    &#x3C;div class=&#x22;tabs-header&#x22;&#x3E;
+      
+      &#x3C;ul class=&#x22;list&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#tab-h1&#x22;&#x3E;Tab 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#tab-h2&#x22;&#x3E;Tab 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#tab-h3&#x22;&#x3E;Tab 3&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+      
+    &#x3C;/div&#x3E;
+    
+    &#x3C;div class=&#x22;tabs-content&#x22;&#x3E;
+      
+      &#x3C;section id=&#x22;tab-h1&#x22;&#x3E;
+        &#x3C;h3 class=&#x22;heading-medium&#x22;&#x3E;Tab 1&#x3C;/h3&#x3E;
+        &#x3C;p&#x3E;Content...&#x3C;/p&#x3E;
+      &#x3C;/section&#x3E;
+      
+      &#x3C;section id=&#x22;tab-h2&#x22;&#x3E;
+        &#x3C;h3 class=&#x22;heading-medium&#x22;&#x3E;Tab 2&#x3C;/h3&#x3E;
+        &#x3C;p&#x3E;Content...&#x3C;/p&#x3E;
+      &#x3C;/section&#x3E;
+      
+      &#x3C;section id=&#x22;tab-h3&#x22;&#x3E;
+        &#x3C;h3 class=&#x22;heading-medium&#x22;&#x3E;Tab 3&#x3C;/h3&#x3E;
+        &#x3C;p&#x3E;Content...&#x3C;/p&#x3E;
+      &#x3C;/section&#x3E;
+    
+    &#x3C;/div&#x3E;
+    
+  &#x3C;/div&#x3E;
+  </code></pre></div>
+    
+    <p>Vertical tabs</p>
+  
+    <div class="example">
+ 
+      <div class="tabs tabs-vertical">
+        
+        <div class="tabs-header">
+          
+          <ul class="list">
+            <li><a href="#william-donaldson">William DONALDSON</a></li>
+            <li><a href="#edward-harrison">Edward HARRISON</a></li>
+          </ul>
+          
+        </div>
+        
+        <div class="tabs-content">          
+          
+          <section id="william-donaldson"> 
+            
+            <h3 class="bold-medium">William DONALDSON</h3>  
+            
+            <p>Born 15 Febuary 1983 <span class="font-small text-secondary">(age 33)</span> <br> In custody</p>         
+                      
+            <p>Pellentesque et erat orci. Nulla urna nibh, aliquam eu suscipit ac, condimentum eget ligula. Pellentesque id leo et diam imperdiet iaculis. Phasellus tincidunt auctor dolor sit amet pellentesque.</p> 
+                        
+          </section>          
+          
+          <section id="edward-harrison">
+            
+            <h3 class="bold-medium">Edward HARRISON</h3>  
+            
+            <p>Born 20 January 1977 <span class="font-small text-secondary">(age 39)</span> <br> In custody</p>   
+            
+            <p>Vestibulum pharetra, turpis ac lacinia iaculis, magna lectus scelerisque urna, ut imperdiet ligula neque nec nibh. Nulla luctus sollicitudin velit nec rutrum.</p>
+            
+          </section>          
+        
+        </div>
+        
+      </div>
+ 
+    </div>
+    
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;tabs tabs-vertical&#x22;&#x3E;
+  
+    &#x3C;div class=&#x22;tabs-header&#x22;&#x3E;
+  
+      &#x3C;ul class=&#x22;list&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#tab-v1&#x22;&#x3E;Tab 1&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#tab-v2&#x22;&#x3E;Tab 2&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+  
+    &#x3C;/div&#x3E;
+  
+    &#x3C;div class=&#x22;tabs-content&#x22;&#x3E;          
+  
+      &#x3C;section id=&#x22;tab-v1&#x22;&#x3E;
+        &#x3C;h3 class=&#x22;bold-medium&#x22;&#x3E;Tab 1&#x3C;/h3&#x3E;
+        &#x3C;p&#x3E;Content...&#x3C;/p&#x3E;
+      &#x3C;/section&#x3E;
+  
+      &#x3C;section id=&#x22;tab-v2&#x22;&#x3E;
+        &#x3C;h3 class=&#x22;bold-medium&#x22;&#x3E;Tab 2&#x3C;/h3&#x3E;
+        &#x3C;p&#x3E;Content...&#x3C;/p&#x3E;
+      &#x3C;/section&#x3E;
+  
+    &#x3C;/div&#x3E;
+  
+  &#x3C;/div&#x3E;
+  </code></pre></div>
+  
+  </section>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

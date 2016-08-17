@@ -1,0 +1,43 @@
+// Related
+// ==========================================================================
+
+$module: 'related';
+
+.#{$module} {
+  border-top: em(10) solid $govuk-blue;
+  margin-top: em(30);
+  padding-top: em(5);
+  
+  &-section {
+    margin-top: em(20);
+    overflow: hidden;
+    
+    &:first-child {
+      margin-top: 0; 
+    }
+    
+  }
+    
+  &-title {
+    @include bold-24();
+    margin-top: em(7);
+    margin-bottom: em(12);
+  }
+
+}
+
+/*
+  
+HTML Usage
+  
+<div class="related">
+  
+  <div class="related-section">
+  
+    <h2 class="related-title">Related links</h2>
+    
+  </div>
+
+</div>
+
+*/

@@ -1,0 +1,38 @@
+  <section aria-labelledby="hint-text">
+  
+    <h3 class="heading-medium" id="hint-text">Hint text</h3>
+    
+    <ul class="text list list-bullet">
+      <li>don&rsquo;t use placeholder text in form fields, as this will disappear once content is entered into the form field</li>
+      <li>use hint text for supporting contextual help, this will always be shown</li>
+      <li>hint text should sit above a form field</li>
+      <li>ensure hint text can be read correctly by screen readers</li>
+    </ul>
+    
+    <div class="example">
+      
+      <form class="form">
+        
+        <label class="form-label" for="ni-number">
+          National Insurance number
+          <span class="form-hint" id="ni-number-hint">It'll be on your last payslip. For example, VO 12 34 56 D</span>
+        </label>
+        
+        <input class="form-control" type="text" id="ni-number" name="ni-number" aria-describedby="ni-number-hint">
+        
+      </form>
+      
+    </div>
+  
+  </section>
+  
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;label class=&#x22;form-label&#x22; for=&#x22;ni&#x22;&#x3E;
+    National Insurance number
+    &#x3C;span class=&#x22;form-hint&#x22; id=&#x22;ni-hint&#x22;&#x3E;It&#x27;ll be on your last payslip...&#x3C;/span&#x3E;
+  &#x3C;/label&#x3E;
+  
+  &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;ni&#x22; name=&#x22;ni&#x22; aria-describedby=&#x22;ni-hint&#x22;&#x3E;
+  </code></pre></div>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

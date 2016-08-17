@@ -1,0 +1,73 @@
+  <section aria-labelledby="date-pattern">
+  
+    <h3 class="heading-medium" id="date-pattern">Date pattern</h3>
+    
+    <div class="example">
+      
+      <form class="form">
+      
+        <fieldset>
+          
+          <legend>          
+            <span class="form-label-bold">What is your date of birth?</span>            
+            <span class="form-hint" id="dob-hint">For example, 31 3 1980</span>            
+          </legend>
+          
+          <div class="form-date">
+            
+            <div class="form-group form-group-day">
+              <label class="form-label" for="dob-day">Day</label>
+              <input class="form-control" type="number" id="dob-day" name="dob-day" pattern="[0-9]*" min="0" max="31" aria-describedby="dob-hint">
+            </div>
+            
+            <div class="form-group form-group-month">
+              <label class="form-label" for="dob-month">Month</label>
+              <input class="form-control" type="number" id="dob-month" name="dob-month" pattern="[0-9]*" min="0" max="12">
+            </div>
+            
+            <div class="form-group form-group-year">
+              <label class="form-label" for="dob-year">Year</label>
+              <input class="form-control" type="number" id="dob-year" name="dob-year" pattern="[0-9]*" min="0" max="2016">
+            </div>
+            
+          </div>
+          
+        </fieldset>
+      
+      </form>
+      
+    </div>
+  
+  </section>
+  
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;fieldset&#x3E;
+    
+    &#x3C;legend&#x3E;          
+      &#x3C;span class=&#x22;form-label-bold&#x22;&#x3E;What is your date of birth?&#x3C;/span&#x3E;            
+      &#x3C;span class=&#x22;form-hint&#x22; id=&#x22;dob-hint&#x22;&#x3E;For example, 31 3 1980&#x3C;/span&#x3E;            
+    &#x3C;/legend&#x3E;
+    
+    &#x3C;div class=&#x22;form-date&#x22;&#x3E;
+      
+      &#x3C;div class=&#x22;form-group form-group-day&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-label&#x22; for=&#x22;dob-day&#x22;&#x3E;Day&#x3C;/label&#x3E;
+        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;number&#x22; id=&#x22;dob-day&#x22; aria-describedby=&#x22;dob-hint&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      
+      &#x3C;div class=&#x22;form-group form-group-month&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-label&#x22; for=&#x22;dob-month&#x22;&#x3E;Month&#x3C;/label&#x3E;
+        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;number&#x22; id=&#x22;dob-month&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      
+      &#x3C;div class=&#x22;form-group form-group-year&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-label&#x22; for=&#x22;dob-year&#x22;&#x3E;Year&#x3C;/label&#x3E;
+        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;number&#x22; id=&#x22;dob-year&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      
+    &#x3C;/div&#x3E;
+    
+  &#x3C;/fieldset&#x3E;
+  </code></pre></div>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

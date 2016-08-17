@@ -1,0 +1,35 @@
+// Page title
+// ==========================================================================
+
+$module: 'page-title';
+
+.#{$module} {
+  background-color: $light-blue;
+  color: white; 
+  padding: $gutter-half;
+  
+  * {
+    @include bold-19;
+    margin: 0; // Not great but allows for any element
+  }
+  
+}
+
+/*
+  
+HTML Usage
+  
+<div class="page-title">
+  <h2>Review full case</h2>
+</div>
+
+<div class="page-title">
+  <p>Review full case</p>
+</div>
+
+<div class="page-title">
+  <h2>Main page title</h2>
+  <p>Include some extra information</p>
+</div>
+
+*/

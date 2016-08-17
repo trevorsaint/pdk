@@ -1,0 +1,66 @@
+// Badge item
+// ==========================================================================
+
+$module: 'badge-item';
+
+.#{$module} {
+  
+  li {
+    background: $govuk-blue;
+    border-top: em(1) solid white;
+    color: white;
+    overflow: hidden;
+    padding: em(15) em(20);
+    
+    &:first-child {
+      border-top: 0;
+    }
+    
+    &.is-selected {
+      background-color: white;
+      
+      .#{$module}-count {
+        background-color: $govuk-blue;
+        border-color: $govuk-blue;
+      }
+      
+      .#{$module}-title {
+        color: $govuk-blue;
+      }      
+      
+    }
+    
+  }
+  
+  &-count {
+    border: em(2) solid white;
+    float: right;
+    padding: 0 em(5);    
+  }
+  
+  &-title {
+    overflow: hidden;
+    padding-right: em(10);    
+  }  
+  
+}
+
+/*
+  
+HTML Usage
+  
+<ul class="badge-item">
+        
+  <li>
+    <span class="badge-item-count">5</span>
+    <span class="badge-item-title">To be assigned to a judge</span>
+  </li>
+  
+  <li>
+    <span class="badge-item-count">3</span>
+    <span class="badge-item-title">Already assigned</span>
+  </li>
+  
+</ul>
+
+*/

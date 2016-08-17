@@ -1,0 +1,36 @@
+// Media
+// ==========================================================================
+
+$module: 'media-image';
+
+.#{$module} {
+  
+  
+  &-title {
+    margin-bottom: $gutter-half;
+  }
+  
+  
+  &-picture {
+    
+    img {
+      display: block;
+    }
+    
+  }
+  
+  
+  &-meta {
+    @include core-16;
+    margin-top: $gutter-half;
+  }
+  
+  
+}
+
+/*
+  
+HTML Usage
+  
+
+*/

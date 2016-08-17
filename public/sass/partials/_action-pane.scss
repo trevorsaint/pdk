@@ -1,0 +1,37 @@
+// Action pane
+// ==========================================================================
+
+$module: 'action-pane';
+
+.#{$module} {
+
+  p {
+    
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+  }
+  
+}
+
+/*
+  
+HTML Usage
+  
+<div class="action-pane"> 
+         
+  <p><a href="#">Go to timeline and summary</a></p> 
+       
+  <p>
+    <span class="bold-small">Next task</span> <br> 
+    <a href="#">Enter your analysis and charging decision</a>
+  </p>      
+  
+</div>
+
+*/

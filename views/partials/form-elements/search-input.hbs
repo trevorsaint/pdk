@@ -1,0 +1,61 @@
+  <section aria-labelledby="search-input">
+  
+    <h3 class="heading-medium" id="search-input">Search input</h3>
+    
+    <p class="text">The search component follows the standard GOV.UK styling.</p>
+    
+    <div class="example">
+      
+      <form class="form">
+        
+        <div class="form-search">
+          <label class="visuallyhidden" for="search">Label</label>
+          <input class="form-control" type="search" id="search-1" name="search-1"><button class="form-search-button" type="submit">Search</button>
+       </div>
+      
+      </form>
+
+    </div>
+    
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;form-search&#x22;&#x3E;
+    &#x3C;label class=&#x22;visually-hidden&#x22; for=&#x22;search&#x22;&#x3E;Label&#x3C;/label&#x3E;
+    &#x3C;input class=&#x22;form-control&#x22; type=&#x22;search&#x22; id=&#x22;search-1&#x22; name=&#x22;search-1&#x22;&#x3E;
+    &#x3C;button class=&#x22;form-search-button&#x22; type=&#x22;submit&#x22;&#x3E;Search&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  </code></pre></div>
+    
+    <p class="text">Search with label and no results found.</p>
+    
+    <div class="example">
+
+      <form class="form">
+        
+        <div class="form-search">
+          <label class="form-label" for="search">Enter part or all of a user&rsquo;s name or email address</label>
+          <input class="form-control" type="search" id="search-2" name="search-2" value="BGV"><button class="form-search-button" type="submit">Search</button>
+       </div>
+       
+       <div class="panel panel-border-wide">
+         <p>0 results found</p>
+       </div>
+      
+      </form>
+
+    </div>
+    
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;form-search&#x22;&#x3E;
+    &#x3C;label class=&#x22;form-label&#x22; for=&#x22;search&#x22;&#x3E;Label&#x3C;/label&#x3E;
+    &#x3C;input class=&#x22;form-control&#x22; type=&#x22;search&#x22; id=&#x22;search-2&#x22; name=&#x22;search-2&#x22; value=&#x22;BGV&#x22;&#x3E;
+    &#x3C;button class=&#x22;form-search-button&#x22; type=&#x22;submit&#x22;&#x3E;Search&#x3C;/button&#x3E;
+  &#x3C;/div&#x3E;
+  
+  &#x3C;div class=&#x22;panel panel-border-wide&#x22;&#x3E;
+   &#x3C;p&#x3E;0 results found&#x3C;/p&#x3E;
+  &#x3C;/div&#x3E;
+  </code></pre></div>
+  
+  </section>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

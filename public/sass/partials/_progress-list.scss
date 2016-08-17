@@ -1,0 +1,53 @@
+// Progress list
+// ==========================================================================
+
+$module: 'progress-list';
+
+.#{$module} {
+  
+  li {
+    @include bold-19;
+    border-bottom: 1px solid $grey-2;
+    color: $grey-1;
+    list-style: decimal;
+    list-style-position: inside;
+    padding: $gutter-half 0;            
+  }
+    
+  .is-active {
+    border-bottom: 3px solid $black;
+    color: black;    
+  }
+  
+  &-status {
+    @include core-14;
+    color: $grey-1;
+    display: block;
+    text-transform: capitalize;
+  }
+  
+}
+
+/*
+  
+HTML Usage
+  
+<ol class="progress-list">
+        
+  <li>Step one
+    <span class="progress-list-status"><i class="icon icon-complete"></i> complete</span>
+  </li>
+  
+  <li>Step two
+    <span class="progress-list-status"><i class="icon icon-complete"></i> complete</span>
+  </li>
+  
+  <li class="is-active">Step three
+    <span class="progress-list-status">incomplete</span>
+  </li>
+  
+  <li>Step four</li>
+  
+</ol>
+
+*/

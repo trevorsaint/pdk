@@ -1,0 +1,306 @@
+  <section aria-labelledby="conditionally-revealing-content">
+  
+    <h3 class="heading-medium" id="conditionally-revealing-content">Conditionally revealing content</h3>
+    
+    <ul class="text list list-bullet">
+      <li>reveal additional questions, depending on the context</li>
+      <li>a left border is used to emphasise this supporting information</li>
+    </ul>
+    
+    <h4 class="heading-small">Radio buttons</h4>
+    
+    <p>Choose an option below to see how this works.</p>
+    
+    <div class="example">
+      
+      <h3 class="heading-medium">How do you want to be contacted?</h3>
+      
+      <form class="form">
+        
+        <fieldset>
+
+          <legend class="visuallyhidden">How do you want to be contacted?</legend>
+      
+          <div class="form-group">
+      
+            <label class="block-label" for="contact-by-email" data-target="by-email">
+              <input id="contact-by-email" type="radio" name="how-to-be-contacted" value="Yes">
+              Email
+            </label>
+            
+            <div class="panel panel-border-narrow js-hidden" id="by-email">
+              <label class="form-label" for="contact-email">Email address</label>
+              <input class="form-control" type="text" id="contact-email" name="contact-email">
+            </div>
+      
+            <label class="block-label" for="contact-by-phone" data-target="by-phone">
+              <input type="radio" id="contact-by-phone" name="how-to-be-contacted" value="No">
+              Phone
+            </label>
+            
+            <div class="panel panel-border-narrow js-hidden" id="by-phone">
+              <label class="form-label" for="contact-phone">Phone number</label>
+              <input class="form-control" type="text" id="contact-phone" name="contact-phone">
+            </div>
+      
+            <label class="block-label" for="contact-by-text" data-target="by-text">
+              <input type="radio" id="contact-by-text" name="how-to-be-contacted" value="No">
+              Text message
+            </label>
+            
+            <div class="panel panel-border-narrow js-hidden" id="by-text">
+              <label class="form-label" for="contact-text-message">Mobile phone number</label>
+              <input class="form-control" type="text" id="contact-text-message" name="contact-text-message">
+            </div>
+      
+          </div>
+      
+        </fieldset>
+        
+      </form>
+      
+    </div>
+    
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;h3 class=&#x22;heading-medium&#x22;&#x3E;How do you want to be contacted?&#x3C;/h3&#x3E;
+  
+  &#x3C;fieldset&#x3E;
+  
+    &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;How do you want to be contacted?&#x3C;/legend&#x3E;
+  
+    &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+  
+      &#x3C;label class=&#x22;block-label&#x22; for=&#x22;contact-by-email&#x22; data-target=&#x22;by-email&#x22;&#x3E;
+        &#x3C;input id=&#x22;contact-by-email&#x22; type=&#x22;radio&#x22; name=&#x22;how-to-be-contacted&#x22; value=&#x22;Yes&#x22;&#x3E;
+        Email
+      &#x3C;/label&#x3E;
+      
+      &#x3C;div class=&#x22;panel panel-border-narrow js-hidden&#x22; id=&#x22;by-email&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-label&#x22; for=&#x22;contact-email&#x22;&#x3E;Email address&#x3C;/label&#x3E;
+        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;contact-email&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+  
+      &#x3C;label class=&#x22;block-label&#x22; for=&#x22;contact-by-phone&#x22; data-target=&#x22;by-phone&#x22;&#x3E;
+        &#x3C;input type=&#x22;radio&#x22; id=&#x22;contact-by-phone&#x22; name=&#x22;how-to-be-contacted&#x22; value=&#x22;No&#x22;&#x3E;
+        Phone
+      &#x3C;/label&#x3E;
+      
+      &#x3C;div class=&#x22;panel panel-border-narrow js-hidden&#x22; id=&#x22;by-phone&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-label&#x22; for=&#x22;contact-phone&#x22;&#x3E;Phone number&#x3C;/label&#x3E;
+        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;contact-phone&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+  
+      &#x3C;label class=&#x22;block-label&#x22; for=&#x22;contact-by-text&#x22; data-target=&#x22;by-text&#x22;&#x3E;
+        &#x3C;input type=&#x22;radio&#x22; id=&#x22;contact-by-text&#x22; name=&#x22;how-to-be-contacted&#x22; value=&#x22;No&#x22;&#x3E;
+        Text message
+      &#x3C;/label&#x3E;
+      
+      &#x3C;div class=&#x22;panel panel-border-narrow js-hidden&#x22; id=&#x22;by-text&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-label&#x22; for=&#x22;contact-text-message&#x22;&#x3E;Mobile phone number&#x3C;/label&#x3E;
+        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;contact-text-message&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+  
+    &#x3C;/div&#x3E;
+  
+  &#x3C;/fieldset&#x3E;
+    </code></pre></div>    
+    
+    <div class="example">
+      
+      <h3 class="heading-medium">Where should we send your new passport?</h3>
+      
+      <form class="form">
+        
+        <div class="form-group">
+        
+          <fieldset>
+  
+            <legend class="visuallyhidden">Where should we send your new passport?</legend>
+        
+            <label class="block-label" for="radio-home-address">
+              <input type="radio" id="radio-home-address" name="radio-indent-group" value="Yes">
+              Home address
+            </label>
+  
+            <label class="block-label" for="radio-other-address" data-target="other-address">
+              <input type="radio" id="radio-other-address" name="radio-indent-group" value="No" aria-controls="other-address">
+              Other address
+            </label>
+  
+            <div class="panel panel-border-narrow js-hidden" id="other-address">
+  
+              <h2 class="heading-medium">Your other address</h2>
+  
+              <fieldset>
+  
+                <legend class="visuallyhidden">Your other address</legend>
+  
+                <div class="form-group form-group-compound">
+                  <label class="form-label" for="address-line-1">Street</label>
+                  <input class="form-control" type="text" id="address-line-1">
+                </div>
+  
+                <div class="form-group">
+                  <label class="form-label visuallyhidden" for="address-line-2">Street</label>
+                  <input class="form-control" type="text" id="address-line-2">
+                </div>
+  
+                <div class="form-group">
+                  <label for="address-town" class="form-label">Town or City</label>
+                  <input class="form-control form-control-1-4" type="text" id="address-town">
+                </div>
+  
+                <div class="form-group">
+                  <label for="address-postcode" class="form-label">Postcode</label>
+                  <input class="form-control form-control-1-8" type="text" id="address-postcode">
+                </div>
+  
+              </fieldset>
+              
+            </div>
+            
+          </fieldset>
+        
+        </div>
+        
+      </form>
+      
+    </div>
+    
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;h3 class=&#x22;heading-medium&#x22;&#x3E;Where should we send your new passport?&#x3C;/h3&#x3E;
+  
+  &#x3C;fieldset&#x3E;
+    
+    &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;Where should we send your new passport?&#x3C;/legend&#x3E;
+  
+    &#x3C;label class=&#x22;block-label&#x22; for=&#x22;radio-home-address&#x22;&#x3E;
+      &#x3C;input type=&#x22;radio&#x22; id=&#x22;radio-home-address&#x22; name=&#x22;radio-indent-group&#x22; value=&#x22;Yes&#x22;&#x3E;
+      Home address
+    &#x3C;/label&#x3E;
+  
+    &#x3C;label class=&#x22;block-label&#x22; for=&#x22;radio-other-address&#x22; data-target=&#x22;other-address&#x22;&#x3E;
+      &#x3C;input type=&#x22;radio&#x22; id=&#x22;radio-other-address&#x22; name=&#x22;radio-indent-group&#x22; value=&#x22;No&#x22; aria-controls=&#x22;other-address&#x22;&#x3E;
+      Other address
+    &#x3C;/label&#x3E;
+  
+    &#x3C;div class=&#x22;panel panel-border-narrow js-hidden&#x22; id=&#x22;other-address&#x22;&#x3E;
+  
+      &#x3C;h2 class=&#x22;heading-medium&#x22;&#x3E;Your other address&#x3C;/h2&#x3E;
+  
+      &#x3C;fieldset&#x3E;
+  
+        &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;Your other address&#x3C;/legend&#x3E;
+  
+        &#x3C;div class=&#x22;form-group form-group-compound&#x22;&#x3E;
+          &#x3C;label class=&#x22;form-label&#x22; for=&#x22;address-line-1&#x22;&#x3E;Street&#x3C;/label&#x3E;
+          &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;address-line-1&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+  
+        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+          &#x3C;label class=&#x22;form-label visuallyhidden&#x22; for=&#x22;address-line-2&#x22;&#x3E;Street&#x3C;/label&#x3E;
+          &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;address-line-2&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+  
+        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+          &#x3C;label for=&#x22;address-town&#x22; class=&#x22;form-label&#x22;&#x3E;Town or City&#x3C;/label&#x3E;
+          &#x3C;input class=&#x22;form-control form-control-1-4&#x22; type=&#x22;text&#x22; id=&#x22;address-town&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+  
+        &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+          &#x3C;label for=&#x22;address-postcode&#x22; class=&#x22;form-label&#x22;&#x3E;Postcode&#x3C;/label&#x3E;
+          &#x3C;input class=&#x22;form-control form-control-1-8&#x22; type=&#x22;text&#x22; id=&#x22;address-postcode&#x22;&#x3E;
+        &#x3C;/div&#x3E;
+  
+      &#x3C;/fieldset&#x3E;
+      
+    &#x3C;/div&#x3E;
+    
+  &#x3C;/fieldset&#x3E;
+    </code></pre></div> 
+    
+    <h4 class="heading-small">Checkboxes</h4>
+    
+    <p>Click on &ldquo;Citizen of a different country&rdquo; to see how this works.</p>
+    
+    <div class="example">
+      
+      <h3 class="heading-medium">What is your nationality?</h3>
+      
+      <p>Select all options that are relevant to you.</p>
+      
+      <form class="form">
+        
+        <fieldset>
+
+          <legend class="visuallyhidden">What is your nationality?</legend>
+      
+          <div class="form-group">
+            
+            <label class="block-label" for="nationalities-british">
+              <input type="checkbox" id="nationalities-british" name="nationalities" value="British">
+              British (including English, Scottish, Welsh and Northern Irish)
+            </label>
+            
+            <label class="block-label" for="nationalities-irish">
+              <input type="checkbox" id="nationalities-irish" name="nationalities" value="Irish">
+              Irish
+            </label>
+            
+            <label class="block-label" for="nationalities-other" data-target="different-country">
+              <input type="checkbox" id="nationalities-other" name="nationalities" value="Citizen of a different country">
+              Citizen of a different country
+            </label>
+            
+            <div class="panel panel-border-narrow js-hidden" id="different-country">
+              <label class="form-label" for="nationalities-other-country">Country name</label>
+              <input class="form-control" type="text" id="nationalities-other-country" name="nationalities-other-country">
+            </div>
+            
+          </div>
+      
+        </fieldset>
+        
+      </form>
+      
+    </div>
+  
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;h3 class=&#x22;heading-medium&#x22;&#x3E;What is your nationality?&#x3C;/h3&#x3E;
+        
+  &#x3C;p&#x3E;Select all options that are relevant to you.&#x3C;/p&#x3E;
+  
+  &#x3C;fieldset&#x3E;
+  
+    &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;What is your nationality?&#x3C;/legend&#x3E;
+  
+    &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+      
+      &#x3C;label class=&#x22;block-label&#x22; for=&#x22;nationalities-british&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;nationalities-british&#x22; name=&#x22;nationalities&#x22; value=&#x22;British&#x22;&#x3E;
+        British (including English, Scottish, Welsh and Northern Irish)
+      &#x3C;/label&#x3E;
+      
+      &#x3C;label class=&#x22;block-label&#x22; for=&#x22;nationalities-irish&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;nationalities-irish&#x22; name=&#x22;nationalities&#x22; value=&#x22;Irish&#x22;&#x3E;
+        Irish
+      &#x3C;/label&#x3E;
+      
+      &#x3C;label class=&#x22;block-label&#x22; for=&#x22;nationalities-other&#x22; data-target=&#x22;different-country&#x22;&#x3E;
+        &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;nationalities-other&#x22; name=&#x22;nationalities&#x22; value=&#x22;Citizen...&#x22;&#x3E;
+        Citizen of a different country
+      &#x3C;/label&#x3E;
+      
+      &#x3C;div class=&#x22;panel panel-border-narrow js-hidden&#x22; id=&#x22;different-country&#x22;&#x3E;
+        &#x3C;label class=&#x22;form-label&#x22; for=&#x22;nationalities-other-country&#x22;&#x3E;Country name&#x3C;/label&#x3E;
+        &#x3C;input class=&#x22;form-control&#x22; type=&#x22;text&#x22; id=&#x22;nationalities-other-country&#x22;&#x3E;
+      &#x3C;/div&#x3E;
+      
+    &#x3C;/div&#x3E;
+  
+  &#x3C;/fieldset&#x3E;
+    </code></pre></div> 
+  
+  </section>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

@@ -1,0 +1,23 @@
+// Status label
+// ==========================================================================
+
+$module: 'status-label';
+
+.#{$module} {
+  border: em(2) solid $black;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1;
+  padding: em(10);
+  text-transform: uppercase;
+}
+
+/*
+  
+HTML Usage
+  
+<strong class="status-label">Awaiting Plea</strong>
+
+<span class="status-label">Awaiting Plea</span>
+
+*/

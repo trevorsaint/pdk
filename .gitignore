@@ -1,0 +1,8 @@
+node_modules/
+.sass-cache
+.tmp/
+dist/
+*.swp
+*.js.swp
+.DS_Store
+files
