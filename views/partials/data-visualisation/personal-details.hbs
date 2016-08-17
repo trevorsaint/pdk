@@ -2,15 +2,24 @@
   
     <h3 class="heading-medium" id="personal-details">Personal details</h3>
     
+    <ul class="text list list-bullet">
+      <li>includes schema information (semantic vocabulary) &ndash; <a href="//schema.org" rel="external">Schema.org</a></li>
+      <li><a href="//search.google.com/structured-data/testing-tool" rel="external">Google Data Testing Tool</a></li>
+    </ul>
+    
     <div class="example">
  
-      <div class="personal-details">
-        <h3 class="bold-large">Peter JAMES</h3>        
+      <div class="personal-details" itemtype="http://schema.org/Person" itemscope>
+        <h3 class="bold-large" itemprop="name">Peter JAMES</h3>        
         <div>30 years old</div>
-        <div>Born 8 June 1985</div>
-        <div>British</div>
+        <div>Born <span itemprop="birthDate">8 June 1985</span></div>
+        <div itemprop="nationality">British</div>
         <div>Self&ndash;defined as White British</div>
-        <div>14 Tottenham Court Road, London W1T 1JY</div>
+        <div itemtype="http://schema.org/PostalAddress" itemprop="address" itemscope>
+          <span itemprop="streetAddress">14 Tottenham Court Road</span>
+          <span itemprop="addressLocality">London</span>
+          <span itemprop="postalCode">W1T 1JY</span>
+        </div>
       </div>
  
     </div>
@@ -18,13 +27,17 @@
   </section>
   
   <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
-  &#x3C;div class=&#x22;personal-details&#x22;&#x3E;
-    &#x3C;h3 class=&#x22;bold-large&#x22;&#x3E;Peter JAMES&#x3C;/h3&#x3E;        
+  &#x3C;div class=&#x22;personal-details&#x22; itemtype=&#x22;http://schema.org/Person&#x22; itemscope&#x3E;
+    &#x3C;h3 class=&#x22;bold-large&#x22; itemprop=&#x22;name&#x22;&#x3E;Peter JAMES&#x3C;/h3&#x3E;        
     &#x3C;div&#x3E;30 years old&#x3C;/div&#x3E;
-    &#x3C;div&#x3E;Born 8 June 1985&#x3C;/div&#x3E;
-    &#x3C;div&#x3E;British&#x3C;/div&#x3E;
+    &#x3C;div&#x3E;Born &#x3C;span itemprop=&#x22;birthDate&#x22;&#x3E;8 June 1985&#x3C;/span&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div itemprop=&#x22;nationality&#x22;&#x3E;British&#x3C;/div&#x3E;
     &#x3C;div&#x3E;Self-defined as White British&#x3C;/div&#x3E;
-    &#x3C;div&#x3E;14 Tottenham Court Road, London W1T 1JY&#x3C;/div&#x3E;
+    &#x3C;div itemtype=&#x22;http://schema.org/PostalAddress&#x22; itemprop=&#x22;address&#x22; itemscope&#x3E;
+      &#x3C;span itemprop=&#x22;streetAddress&#x22;&#x3E;14 Tottenham Court Road&#x3C;/span&#x3E;
+      &#x3C;span itemprop=&#x22;addressLocality&#x22;&#x3E;London&#x3C;/span&#x3E;
+      &#x3C;span itemprop=&#x22;postalCode&#x22;&#x3E;W1T 1JY&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
   &#x3C;/div&#x3E;
   </code></pre></div>
   
