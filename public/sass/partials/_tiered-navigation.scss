@@ -1,0 +1,40 @@
+// Tiered navigation
+// ==========================================================================
+
+$module: 'tiered-navigation';
+
+.#{$module} {
+  
+  li {
+    @include bold-19;
+    border-bottom: 1px solid $grey-2;
+    color: $grey-1;
+    padding: $gutter-half 0;
+    
+    &:last-child {
+      border: 0;
+    }
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+    
+  .is-active {
+    border-bottom: 3px solid $black;
+    color: black;    
+  }
+  
+}
+
+/*
+  
+HTML Usage
+  
+<ul class="tiered-navigation">
+
+  
+</ul>
+
+*/

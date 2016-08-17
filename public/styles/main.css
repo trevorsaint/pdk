@@ -2362,6 +2362,43 @@ HTML Usage
 </ol>
 
 */
+.tiered-navigation li {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: none;
+  border-bottom: 1px solid #bfc1c3;
+  color: #6f777b;
+  padding: 15px 0;
+}
+@media (min-width: 641px) {
+  .tiered-navigation li {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+.tiered-navigation li:last-child {
+  border: 0;
+}
+.tiered-navigation a {
+  text-decoration: none;
+}
+.tiered-navigation .is-active {
+  border-bottom: 3px solid #0b0c0c;
+  color: black;
+}
+
+/*
+  
+HTML Usage
+  
+<ul class="tiered-navigation">
+
+  
+</ul>
+
+*/
 .page-title {
   background-color: #2b8cc4;
   color: white;
@@ -3107,6 +3144,10 @@ HTML Usage
 </dl>
 
 */
+.personal-details [class*=heading] {
+  margin-top: 0;
+}
+
 /*
   
 HTML Usage

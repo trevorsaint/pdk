@@ -5,6 +5,11 @@ $module: 'personal-details';
 
 .#{$module} {
   
+  // Targert any heading class
+  [class*=heading] {
+    margin-top: 0;
+  }
+  
 }
 
 /*
