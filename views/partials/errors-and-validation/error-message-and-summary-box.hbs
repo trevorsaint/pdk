@@ -1,0 +1,123 @@
+  <section aria-labelledby="margins">
+  
+    <h3 class="heading-medium" id="margins">Error message and summary box</h3>
+    
+    <p class="lead-in">You must:</p>
+    
+    <ul class="list list-bullet">
+      <li>show an error summary at the top of the page</li>
+      <li>include a heading to alert the user of the error</li>
+      <li>link to each of the problematic questions</li>
+    </ul>
+    	
+    <div class="example">
+           
+           
+      <div class="error-summary" tabindex="-1" role="group" aria-labelledby="error-summary-heading">
+        
+        <h1 class="heading-medium error-summary-heading" id="error-summary-heading">Fix the following</h1>
+        
+        <ul class="error-summary-list">
+          <li><a href="#error-case-unique-reference-number">Case or Unique Reference number</a></li>
+          <li><a href="#error-your-postcode">Your postcode</a></li>
+        </ul>
+        
+      </div>
+      
+      
+      <h1 class="heading-large">Your case</h1>
+
+
+      <form class="form">
+        
+        <div class="form-group error">
+          
+          <label id="error-case-unique-reference-number">
+            <span class="form-label-bold">Case or Unique Reference number</span>
+            <span class="form-hint">Find this on your notice</span>
+            <span class="error-message" id="error-message-case-unique-reference-number">Provide this information</span>
+          </label>
+          
+          <input class="form-control" type="text" id="case-unique-reference-number" aria-describedby="error-message-case-unique-reference-number">
+          
+        </div>
+        
+        <div class="form-group error">
+          
+          <label id="error-your-postcode">
+            <span class="form-label-bold">Your postcode</span>
+            <span class="error-message" id="error-message-your-postcode">Provide this information</span>
+          </label>
+          
+          <input class="form-control form-control-1-4" type="text" id="your-postcode" aria-describedby="error-message-your-postcode">
+          
+        </div>
+        
+        
+        <input class="button" type="submit" value="Continue">
+        
+        
+      </form>
+          
+          
+    </div>
+  
+  </section>
+  
+  
+  <div class="panel panel-border-wide">
+    
+    <p class="text">Some attributes have been renoved to allow focus on <abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes. For example, ID&rsquo;s and type attributes on inputs.</p>
+    
+  </div>
+  
+  
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;error-summary&#x22; tabindex=&#x22;-1&#x22; role=&#x22;group&#x22; aria-labelledby=&#x22;error-summary-heading&#x22;&#x3E;
+          
+    &#x3C;h1 class=&#x22;heading-medium error-summary-heading&#x22; id=&#x22;error-summary-heading&#x22;&#x3E;Fix the...&#x3C;/h1&#x3E;
+    
+    &#x3C;ul class=&#x22;error-summary-list&#x22;&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#error-case-reference&#x22;&#x3E;Case or Unique Reference number&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#error-postcode&#x22;&#x3E;Your postcode&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+    
+  &#x3C;/div&#x3E;
+  
+  
+  &#x3C;h1 class=&#x22;heading-large&#x22;&#x3E;Your case&#x3C;/h1&#x3E;
+  
+  
+  &#x3C;form class=&#x22;form&#x22;&#x3E;
+    
+    &#x3C;div class=&#x22;form-group error&#x22;&#x3E;
+      
+      &#x3C;label id=&#x22;error-reference&#x22;&#x3E;
+        &#x3C;span class=&#x22;form-label-bold&#x22;&#x3E;Case or Unique Reference number&#x3C;/span&#x3E;
+        &#x3C;span class=&#x22;form-hint&#x22;&#x3E;Find this on your notice&#x3C;/span&#x3E;
+        &#x3C;span class=&#x22;error-message&#x22; id=&#x22;error-message-reference&#x22;&#x3E;Provide this information&#x3C;/span&#x3E;
+      &#x3C;/label&#x3E;
+      
+      &#x3C;input class=&#x22;form-control&#x22; aria-describedby=&#x22;error-message-reference&#x22;&#x3E;
+      
+    &#x3C;/div&#x3E;
+    
+    &#x3C;div class=&#x22;form-group error&#x22;&#x3E;
+      
+      &#x3C;label id=&#x22;error-postcode&#x22;&#x3E;
+        &#x3C;span class=&#x22;form-label-bold&#x22;&#x3E;Your postcode&#x3C;/span&#x3E;
+        &#x3C;span class=&#x22;error-message&#x22; id=&#x22;error-message-postcode&#x22;&#x3E;Provide this information&#x3C;/span&#x3E;
+      &#x3C;/label&#x3E;
+      
+      &#x3C;input class=&#x22;form-control&#x22; aria-describedby=&#x22;error-message-postcode&#x22;&#x3E;
+      
+    &#x3C;/div&#x3E;
+    
+    
+    &#x3C;input class=&#x22;button&#x22; type=&#x22;submit&#x22; value=&#x22;Continue&#x22;&#x3E;
+    
+    
+  &#x3C;/form&#x3E;
+  </code></pre></div>
+  
+  <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

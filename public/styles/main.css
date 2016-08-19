@@ -3584,3 +3584,7 @@ HTML Usage
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.lead-in {
+  margin-bottom: 0;
+}
