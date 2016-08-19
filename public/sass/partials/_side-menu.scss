@@ -5,34 +5,28 @@ $module: 'menu';
 
 .#{$module} {
   
-  
   &-heading {
     border-bottom: 1px solid $grey-2;
     padding: $gutter-half;
   }
-  
   
   a {
     display: block;
     text-decoration: none;
   }
   
-  
   ul {
     list-style: none;
   }
-  
   
   &-title {
     display: block;
     font-weight: bold;
   }
   
-  
   &-text {
     color: black;
   }
-  
   
   li {
     padding: $gutter-half;
@@ -51,12 +45,10 @@ $module: 'menu';
     
   }
   
-  
 }
 
 /*
   
 HTML Usage
-  
 
 */

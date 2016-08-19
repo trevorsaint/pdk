@@ -8,34 +8,30 @@ $module: 'pagination';
   position: relative;
   min-height: 37px;
   width: 100%;
-
   
-  
-    &-numbers {
-      display: none;
-      
-      // Show on desktop
-      @include media(desktop) {
-        display: block;
-        transform: translateY(-50%) translateX(-50%);
-        position: absolute;
-        left: 50%; top: 50%;
-      
-        li {
-          display: inline-block;
-        }
-        
-        a {
-          display: block;
-          padding: 3px 10px;
-          text-decoration: none;
-        }
-        
-      }  
+  &-numbers {
+    display: none;
     
-    }
+    @include media(desktop) {
+      display: block;
+      transform: translateY(-50%) translateX(-50%);
+      position: absolute;
+      left: 50%; top: 50%;
+    
+      li {
+        display: inline-block;
+      }
+      
+      a {
+        display: block;
+        padding: 3px 10px;
+        text-decoration: none;
+      }
+      
+    }  
   
-  
+  }
+
   &-prev,
   &-next {
     

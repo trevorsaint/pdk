@@ -5,11 +5,9 @@ $module: 'media-image';
 
 .#{$module} {
   
-  
   &-title {
     margin-bottom: $gutter-half;
   }
-  
   
   &-picture {
     
@@ -19,18 +17,15 @@ $module: 'media-image';
     
   }
   
-  
   &-meta {
     @include core-16;
     margin-top: $gutter-half;
   }
-  
   
 }
 
 /*
   
 HTML Usage
-  
 
 */

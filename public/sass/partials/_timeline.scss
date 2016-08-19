@@ -5,13 +5,11 @@ $module: 'timeline';
 
 .#{$module} {
   
-  
   &-header {
     border-top: em(10) solid $govuk-blue;
     padding-top: $gutter-half;
     padding-bottom: $gutter-half;
   }
-  
   
   &-block {
     border: 1px solid $grey-2;
@@ -36,18 +34,15 @@ $module: 'timeline';
       width: 1px;
     }
     
-    
     &-header {
       background-color: $grey-4;
       border-bottom: 1px solid $grey-2;
       padding: $gutter-half;
     }
-  
     
     &-content {
       padding: $gutter-half;
     }
-    
     
     &-updates {
       margin-top: $gutter-half;
@@ -59,16 +54,12 @@ $module: 'timeline';
       
     }
     
-    
   }
-  
   
 }
 
 /*
   
 HTML Usage
-  
-
 
 */

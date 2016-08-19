@@ -5,8 +5,7 @@ $module: 'tabs';
 
 .#{$module} {
 
-
-  // Shared tab properties
+  // shared tab properties
   [role='tabpanel'] {
    
     &[aria-hidden='true'] {
@@ -14,7 +13,6 @@ $module: 'tabs';
     }
     
   }
-  
   
   @include media(tablet) {
     
@@ -37,12 +35,10 @@ $module: 'tabs';
     }
      
   }
-
   
   @include media(tablet) {
     
-    
-    // Tabs horizontal only styles
+    // tabs horizontal only styles
     &-horizontal {
       
       [role='tab'] {
@@ -77,7 +73,7 @@ $module: 'tabs';
         clear: both;
         padding: $gutter-half;
         
-        // Targets and first item
+        // targets and first item
         *:first-of-type {
           margin-top: 0;
         }
@@ -86,10 +82,8 @@ $module: 'tabs';
       
     }  
     
-    
-    // Tabs vertical only styles
+    // tabs vertical only styles
     &-vertical {
-      
       
       [role='tab'] {
         display: block;
@@ -104,7 +98,6 @@ $module: 'tabs';
         }
         
       }
-      
       
       [role='tablist'] {
         border: 1px solid $grey-2;
@@ -124,24 +117,20 @@ $module: 'tabs';
         
       }
       
-      
       [role='tabpanel'] {
         border: 2px solid #bfc1c3;
         overflow: hidden;
         padding: $gutter-half - 4;
         
-        // Targets and first item
+        // targets and first item
         *:first-of-type {
           margin-top: 0;
         }
                 
       }
       
-      
-    } 
-      
+    }  
     
   }
-
 
 }

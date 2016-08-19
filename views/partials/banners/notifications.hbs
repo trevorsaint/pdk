@@ -7,9 +7,10 @@
       <li>top of the page just below the breadcrumb or phase banner</li>
     </ul>
     
+    
     <div class="example">
       
-      <p>1. Critical and non&ndash;critical notifications</p>
+      <p>Critical and non&ndash;critical notifications</p>
       
       <div class="notification notification-confirmation" role="alert">
         
@@ -19,19 +20,26 @@
           <p class="bold-medium">Your request has been sent and will be dealt with by a legal adviser</p>
         </div>
       
-      </div>   
-      
-      <div class="notification notification-confirmation" role="alert">
-        
-        <i class="icon icon-important-white" role="presentation" aria-hidden="true"></i>
-
-        <div class="notification-message">
-          <p class="bold-medium">Accepted case management information</p>
-        </div>
-      
       </div>
       
-      <p>2. Active notifications</p>
+    </div>
+    
+  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;notification notification-confirmation&#x22;&#x3E;
+    &#x3C;i class=&#x22;icon icon-important-white&#x22;&#x3E;&#x3C;/i&#x3E;
+    &#x3C;div class=&#x22;notification-message&#x22;&#x3E;
+      &#x3C;p class=&#x22;bold-medium&#x22;&#x3E;Accepted case management information&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
+  </code></pre></div>
+    
+    <div class="panel panel-border-wide">
+      <p class="text">It has been agreed by the design team that these patterns should no longer be used!</p>
+    </div>
+    
+    <div class="example example-deprecated">
+      
+      <p>Active notifications</p>
       
       <div class="notification notification-active" role="alert">
         
@@ -43,7 +51,7 @@
       
       </div>
       
-      <p>3. ending notifications</p>
+      <p>Pending notifications</p>
       
       <div class="notification notification-pending" role="alert">
       
@@ -53,7 +61,7 @@
       
       </div>
       
-      <p>4. Locked notifications</p>
+      <p>Locked notifications</p>
       
       <div class="notification notification-locked" role="alert">
       
@@ -65,7 +73,7 @@
       
       </div>
       
-      <p>5. Deregistered notifications</p>
+      <p>Deregistered notifications</p>
       
       <div class="notification notification-deregistered" role="alert">
       
@@ -76,17 +84,11 @@
       </div>
       
     </div>
+    
       
   </section>
   
   <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
-  &#x3C;div class=&#x22;notification notification-confirmation&#x22;&#x3E;
-    &#x3C;i class=&#x22;icon icon-important-white&#x22;&#x3E;&#x3C;/i&#x3E;
-    &#x3C;div class=&#x22;notification-message&#x22;&#x3E;
-      &#x3C;p class=&#x22;bold-medium&#x22;&#x3E;Accepted case management information&#x3C;/p&#x3E;
-    &#x3C;/div&#x3E;
-  &#x3C;/div&#x3E;
-      
   &#x3C;div class=&#x22;notification notification-active&#x22;&#x3E;
     &#x3C;i class=&#x22;icon icon-tick-white&#x22;&#x3E;&#x3C;/i&#x3E;
     &#x3C;div class=&#x22;notification-message&#x22;&#x3E;

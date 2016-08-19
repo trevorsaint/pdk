@@ -5,7 +5,7 @@ $module: 'personal-details';
 
 .#{$module} {
   
-  // Targert any heading class
+  // targerts any heading class
   [class*=heading] {
     margin-top: 0;
   }

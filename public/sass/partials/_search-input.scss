@@ -27,7 +27,6 @@ $module: 'form-search';
     
   }
   
-  
   &-button {
     @include box-sizing(border-box);
     background-color: $govuk-blue;
@@ -65,9 +64,6 @@ $module: 'form-search';
   }
    
 }
-
-
-// With errors
 
 .error {
   

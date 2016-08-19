@@ -13,7 +13,7 @@ $module: 'example';
   
   &:before {
     @include core-14;
-    background: $grey-2;
+    background-color: $grey-2;
     color: white;
     content: 'Example';
     padding: em(10);
@@ -21,8 +21,17 @@ $module: 'example';
     text-transform: uppercase;
   }
   
+  &-deprecated {
+    border-color: $red;
+    
+    &:before {
+      background-color: $red;
+      content: 'Deprecated Example';
+    }
+    
+  }
+  
 }
-
 
 $module: 'highlight';
 
@@ -30,7 +39,6 @@ $module: 'highlight';
   color: $govuk-blue;
   font-style: normal;
 }
-
 
 $module: 'toc';
 
@@ -41,7 +49,6 @@ $module: 'toc';
   }
   
 }
-
 
 $module: 'code-example';
 
@@ -61,15 +68,7 @@ $module: 'code-example';
   
 }
 
-
-abbr {
-  letter-spacing: .125em;
-}
-
-
-
-// Colour swatches
-
+// colour swatches
 .swatch {
   width: 60px;
   height: 60px;
@@ -85,8 +84,7 @@ abbr {
   }
 }
 
-// Sass list for colour palette
-
+// sass list for colour palette
 $palette: (
   ("purple", $purple),
   ("mauve", $mauve),
@@ -115,8 +113,7 @@ $palette: (
   }
 }
 
-// Generate swatch classes for each colour in palette list
-
+// generate swatch classes for each colour in palette list
 @include color-swatches;
 
 .swatch-alpha {
@@ -213,8 +210,7 @@ $palette: (
   background-color: $highlight-colour;
 }
 
-// Colour swatch layout
-
+// colour swatch layout
 .swatch-wrapper {
   @include media(tablet) {
     float: left;
@@ -234,11 +230,14 @@ $palette: (
       padding-top: 10px;
     }
   }
+  
   li {
     @include core-16;
   }
+  
   b {
-  font-weight: bold;
-  text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
   }
+  
 }

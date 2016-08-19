@@ -10,7 +10,6 @@
   }
 }
 
-
 .box {
   background-color: $grey-3;
   display: block;
@@ -90,8 +89,7 @@
 }
 
 
-
-
+// Clearfix
 
 %clearfix {
   &:after {
@@ -100,10 +98,3 @@
     clear: both;
   }
 }
-
-
-
-
-
-
-

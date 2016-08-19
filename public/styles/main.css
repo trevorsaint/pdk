@@ -2172,98 +2172,6 @@ HTML Usage
 </div>
 
 */
-/*$module: 'pager';
-
-.related {
-  margin-top: em(5, 16);
-  margin-bottom: em(20, 16);
-
-  @include media(tablet) {
-    margin-top: em(5);
-    margin-bottom: em(20);
-  }
-
-  &-items {
-    display: none;
-
-    @include media(tablet) {
-      display: inline;
-
-      li {
-        display: inline;
-        margin: 0 em(5);
-
-        &:first-child {
-          margin-left: 0;
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-      }
-
-    }
-
-  }
-
-  &-prev,
-  &-next {
-    margin-right: em(10);
-
-    @include media(tablet) {
-      margin-right: 0;
-    }
-
-  }
-
-  &-prev {
-
-    @include media(tablet) {
-      margin-right: em(10);
-    }
-
-  }
-
-  &-next {
-
-    @include media(tablet) {
-      margin-left: em(10);
-    }
-
-  }
-
-  &-controls {
-
-    @include media(tablet) {
-      float: right;
-    }
-
-  }
-
-}*/
-/*
-  
-HTML Usage
-  
-<div class="pager">
-    
-  <div class="pager-controls">
-    
-    <ul class="pager-items">
-      <li>1</li>
-      <li><a href="#">2</a></li>
-    </ul>
-    
-    <a href="#" class="pager-next">Next</a>
-    
-  </div>
-  
-  <div class="pager-summary">Showing 1 &ndash; 10 of 20 results</div>
-  
-</div>
-
-*/
 .persist-info {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
@@ -2360,81 +2268,6 @@ HTML Usage
   <li>Step four</li>
   
 </ol>
-
-*/
-.tiered-navigation li {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  text-transform: none;
-  border-bottom: 1px solid #bfc1c3;
-  color: #6f777b;
-  padding: 15px 0;
-}
-@media (min-width: 641px) {
-  .tiered-navigation li {
-    font-size: 19px;
-    line-height: 1.31579;
-  }
-}
-.tiered-navigation li:last-child {
-  border: 0;
-}
-.tiered-navigation a {
-  text-decoration: none;
-}
-.tiered-navigation .is-active {
-  border-bottom: 3px solid #0b0c0c;
-  color: black;
-}
-
-/*
-  
-HTML Usage
-  
-<ul class="tiered-navigation">
-
-  
-</ul>
-
-*/
-.page-title {
-  background-color: #2b8cc4;
-  color: white;
-  padding: 15px;
-}
-.page-title * {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 700;
-  text-transform: none;
-  margin: 0;
-}
-@media (min-width: 641px) {
-  .page-title * {
-    font-size: 19px;
-    line-height: 1.31579;
-  }
-}
-
-/*
-  
-HTML Usage
-  
-<div class="page-title">
-  <h2>Review full case</h2>
-</div>
-
-<div class="page-title">
-  <p>Review full case</p>
-</div>
-
-<div class="page-title">
-  <h2>Main page title</h2>
-  <p>Include some extra information</p>
-</div>
 
 */
 .digit-box {
@@ -2579,31 +2412,6 @@ HTML Usage
 /*
   
 HTML Usage
-  
-
-
-*/
-.action-pane p:first-child {
-  margin-top: 0;
-}
-.action-pane p:last-child {
-  margin-bottom: 0;
-}
-
-/*
-  
-HTML Usage
-  
-<div class="action-pane"> 
-         
-  <p><a href="#">Go to timeline and summary</a></p> 
-       
-  <p>
-    <span class="bold-small">Next task</span> <br> 
-    <a href="#">Enter your analysis and charging decision</a>
-  </p>      
-  
-</div>
 
 */
 .pagination {
@@ -2868,8 +2676,6 @@ HTML Usage
 /*
   
 HTML Usage
-  
-
 
 */
 .media-image-title {
@@ -2896,7 +2702,6 @@ HTML Usage
 /*
   
 HTML Usage
-  
 
 */
 .menu-heading {
@@ -2934,7 +2739,6 @@ HTML Usage
 /*
   
 HTML Usage
-  
 
 */
 .tabs [role='tabpanel'][aria-hidden='true'] {
@@ -3286,35 +3090,6 @@ HTML Usage
 </div>
 
 */
-.section {
-  overflow: hidden;
-  margin: 1.05263em 0;
-}
-
-/*$module: 'tag';
-
-.section {
-  @include inline-block;
-  @include bold-16($line-height: 20 / 16);
-  border: 2px solid $black;
-  color: $black;
-  letter-spacing: 1px;
-  margin: 0 8px 0 0;
-  padding: 2px 5px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-}*/
-/*
-  
-HTML Usage
-
-<p><strong class="tag">Pleaded guilty</strong></p>
-
-<p><strong class="tag">Not guilty</strong></p>
-
-<p><strong class="tag">No plea given</strong></p>
-
-*/
 .figure {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -3408,38 +3183,6 @@ HTML Usage
   <label class="form-label" for="search">Enter part or all of a user&rsquo;s name or email address</label>
   <input class="form-control" type="search" id="search" name="search" value="BGV"><button class="form-search-button" type="submit">Search</button>
   <p class="form-search-clear"><a href="#">Clear search</a></p>
-</div>
-
-*/
-.block-mb-sm {
-  margin-bottom: 15px;
-}
-.block-mb-md {
-  margin-bottom: 15px;
-}
-@media (min-width: 641px) {
-  .block-mb-md {
-    margin-bottom: 30px;
-  }
-}
-.block-mt-sm {
-  margin-top: 15px;
-}
-.block-mt-md {
-  margin-top: 15px;
-}
-@media (min-width: 641px) {
-  .block-mt-md {
-    margin-top: 30px;
-  }
-}
-
-/*
-  
-HTML Usage
-  
-<div class="block block-mb-md">
-  ... content
 </div>
 
 */
@@ -3582,7 +3325,7 @@ HTML Usage
   line-height: 1.25;
   font-weight: 400;
   text-transform: none;
-  background: #bfc1c3;
+  background-color: #bfc1c3;
   color: white;
   content: 'Example';
   padding: 0.52632em;
@@ -3596,6 +3339,13 @@ HTML Usage
     font-size: 14px;
     line-height: 1.42857;
   }
+}
+.example-deprecated {
+  border-color: #b10e1e;
+}
+.example-deprecated:before {
+  background-color: #b10e1e;
+  content: 'Deprecated Example';
 }
 
 .highlight {
@@ -3620,10 +3370,6 @@ HTML Usage
   .code-example {
     display: block;
   }
-}
-
-abbr {
-  letter-spacing: .125em;
 }
 
 .swatch {
