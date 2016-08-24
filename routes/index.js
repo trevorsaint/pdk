@@ -5,7 +5,6 @@ bind: function(app) {
   
   
     // Locals
-  
     app.locals = {
       serviceTitle: 'Platform Development Kit',
       baseurl: '/'
@@ -13,7 +12,6 @@ bind: function(app) {
     
     
     // Routes
-    
     app.get('/', function (req, res) {
       res.render('index', {
         docTitle: 'PLatform Development Kit',
@@ -30,18 +28,17 @@ bind: function(app) {
       res.render('typography', {
         docTitle: 'Typography',
         pageTitle: 'Typography',
-        pageLead: 'For GOV.UK domains, always use the GDS Transport Website font in Light and Bold.',
+        pageLead: 'For GOV.UK domains, always use the <abbr title="Government Digital Services">GDS</abbr> Transport Website font in Light and Bold.',
         phaseBanner: true,
         usePrettify: true
       });
     });
     
     
-    app.get('/buttons', function (req, res) {
-      res.render('buttons', {
-        docTitle: 'Buttons',
-        pageTitle: 'Buttons',
-        pageLead: 'Use buttons to move though a transaction, aim to use only one button per page.',
+    app.get('/buttons-and-filters', function (req, res) {
+      res.render('buttons-and-filters', {
+        docTitle: 'Buttons and filters',
+        pageTitle: 'Buttons and filters',
         phaseBanner: true,
         usePrettify: true
       });
