@@ -3588,3 +3588,7 @@ HTML Usage
 .lead-in {
   margin-bottom: 0;
 }
+
+b {
+  font-weight: bold;
+}
