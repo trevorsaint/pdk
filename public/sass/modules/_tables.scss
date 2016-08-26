@@ -4,29 +4,17 @@
 $module: 'table';
 
 .#{$module} {
-  margin-bottom: em(20); 
+  margin-bottom: em(20);
+ 
+  // personal details modifier
+ &-personal-details {
 
-  .last {
-    padding-right: 0;
-    text-align: right;  
-  }
-  
-  &-noborders {
-    
-    tbody {
-    
-      th, td {
-        border-bottom: 0;
+    @include media(tablet) {
+
+      th:first-child {
+        width: 30%
       }
     
-    }
-    
-  }
-  
-  &-valign-top {
-      
-    th, td {
-      vertical-align: top;
     }
     
   }

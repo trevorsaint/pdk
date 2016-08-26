@@ -2094,15 +2094,10 @@ button::-moz-focus-inner {
 .table {
   margin-bottom: 1.05263em;
 }
-.table .last {
-  padding-right: 0;
-  text-align: right;
-}
-.table-noborders tbody th, .table-noborders tbody td {
-  border-bottom: 0;
-}
-.table-valign-top th, .table-valign-top td {
-  vertical-align: top;
+@media (min-width: 641px) {
+  .table-personal-details th:first-child {
+    width: 30%;
+  }
 }
 
 .form-group-last {
