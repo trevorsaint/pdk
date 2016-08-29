@@ -2799,7 +2799,7 @@ HTML Usage
   line-height: 1.14286;
   font-weight: 400;
   text-transform: none;
-  margin-top: 15px;
+  margin-top: 0.625em;
 }
 @media (min-width: 641px) {
   .media-image-meta {
@@ -2809,7 +2809,7 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
 
 */

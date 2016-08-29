@@ -4,28 +4,28 @@
 $module: 'media-image';
 
 .#{$module} {
-  
+
   &-title {
     margin-bottom: $gutter-half;
   }
-  
+
   &-picture {
-    
+
     img {
-      display: block;
+      display: block; // removes extra space
     }
-    
+
   }
-  
+
   &-meta {
     @include core-16;
-    margin-top: $gutter-half;
+    margin-top: em(10, 16);
   }
-  
+
 }
 
 /*
-  
+
 HTML Usage
 
 */
