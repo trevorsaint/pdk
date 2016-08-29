@@ -3536,9 +3536,6 @@ HTML Usage
 .swatch {
   width: 60px;
   height: 60px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
 }
 @media (max-width: 640px) {
   .swatch {

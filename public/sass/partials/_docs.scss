@@ -73,7 +73,7 @@ $module: 'code-example';
 .swatch {
   width: 60px;
   height: 60px;
-  @include border-radius(100%);
+  //@include border-radius(100%);
   @include media(mobile) {
     clear: both;
     float: left;
