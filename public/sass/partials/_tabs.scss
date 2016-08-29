@@ -37,6 +37,15 @@ $module: 'tabs';
     [role='presentation'] {
       margin: 0;
     }
+    
+    [role='tabpanel'] {
+      
+      // targets any first item
+      *:first-of-type {
+        margin-top: 0;
+      }
+              
+    }
      
   }
   
@@ -71,13 +80,7 @@ $module: 'tabs';
       [role='tabpanel'] {
         border-top: 1px solid $grey-2;
         clear: both;
-        padding: $gutter-half;
-        
-        // targets and first item
-        *:first-of-type {
-          margin-top: 0;
-        }
-        
+        padding-top: em(20);        
       }
       
     }  
@@ -127,13 +130,7 @@ $module: 'tabs';
       [role='tabpanel'] {
         border: 1px solid #bfc1c3;
         overflow: hidden;
-        padding: $gutter-half - 4;
-        
-        // targets and first item
-        *:first-of-type {
-          margin-top: 0;
-        }
-                
+        padding: em(20);                
       }
       
     }  

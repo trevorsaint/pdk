@@ -2756,6 +2756,9 @@ HTML Usage
   .tabs [role='presentation'] {
     margin: 0;
   }
+  .tabs [role='tabpanel'] *:first-of-type {
+    margin-top: 0;
+  }
 }
 @media (min-width: 641px) {
   .tabs-horizontal [role='tab'] {
@@ -2780,10 +2783,7 @@ HTML Usage
   .tabs-horizontal [role='tabpanel'] {
     border-top: 1px solid #bfc1c3;
     clear: both;
-    padding: 15px;
-  }
-  .tabs-horizontal [role='tabpanel'] *:first-of-type {
-    margin-top: 0;
+    padding-top: 1.05263em;
   }
   .tabs-vertical [role='presentation'] {
     margin-top: 0.26316em;
@@ -2818,10 +2818,7 @@ HTML Usage
   .tabs-vertical [role='tabpanel'] {
     border: 1px solid #bfc1c3;
     overflow: hidden;
-    padding: 11px;
-  }
-  .tabs-vertical [role='tabpanel'] *:first-of-type {
-    margin-top: 0;
+    padding: 1.05263em;
   }
 }
 
