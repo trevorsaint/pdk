@@ -6,14 +6,15 @@ $module: 'action-bar';
 .#{$module} {
 
   // shared style
-  a {
-    text-decoration: none;
+  &-header {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: em(10);
   }
 
   &-title {
     display: block;
     font-weight: bold;
-    padding: em(10);
   }
 
   // start
@@ -23,6 +24,7 @@ $module: 'action-bar';
 
     .#{$module}-header {
       background-color: $white;
+      text-decoration: none;
 
       &-secondary {
         background-color: lighten($govuk-blue, 60%);
@@ -65,6 +67,78 @@ $module: 'action-bar';
   // completed
   &-completed {
 
+    .#{$module}-header {
+      display: table;
+      width: 100%;
+    }
+
+    .#{$module}-title {
+      font-weight: normal;
+      display: table-cell;
+      padding-right: em(20);
+      vertical-align: top;
+    }
+
+    .#{$module}-options {
+      display: table-cell;
+      font-size: 16px;
+      text-align: right;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    .#{$module}-action {
+      display: inline-block;
+      margin-left: em(10, 16);
+      overflow: hidden;
+      vertical-align: middle;
+    }
+
+    .#{$module}-status {
+      background-color: $white;
+      border: 2px solid $white;
+      display: inline-block;
+      font-weight: bold;
+      padding: em(3, 16) em(6, 16);
+      vertical-align: middle;
+
+      &:after {
+        background-image: file-url('actionbar-status-done.png');
+        content: '';
+        display: inline-block;
+        height: 11px; // fixed size
+        width: 14px; // fixed size
+
+        @include device-pixel-ratio() {
+          background-image: file-url('actionbar-status-done-2x.png');
+          background-size: 100%;
+        }
+
+      }
+
+      &-saved {
+        border-color: $turquoise;
+        color: $turquoise;
+
+        &:before {
+          content: 'Saved';
+        }
+
+        &:after {
+          background-image: file-url('actionbar-status-saved.png');
+          margin-left: em(5);
+
+          @include device-pixel-ratio() {
+            background-image: file-url('actionbar-status-saved-2x.png');
+            background-size: 100%;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 
 }
@@ -72,5 +146,22 @@ $module: 'action-bar';
 /*
 
 HTML Usage
+
+<div class="action-bar action-bar-start">
+  <a class="action-bar-header" href="#">
+    <span class="action-bar-title">Record case strengths, weaknesses and strategy</span>
+  </a>
+</div>
+
+OR
+
+<div class="action-bar action-bar-completed">
+  <div class="action-bar-header">
+    <span class="action-bar-title">ECHR doesn&rsquo;t apply</span>
+    <span class="action-bar-options">
+      <span class="action-bar-status action-bar-status-saved">Saved</span><a class="action-bar-action" href="#">Amend</a>
+    </span>
+  </div>
+</div>
 
 */

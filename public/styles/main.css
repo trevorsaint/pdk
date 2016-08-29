@@ -2373,13 +2373,14 @@ HTML Usage
 <span class="status-label">Awaiting Plea</span>
 
 */
-.action-bar a {
-  text-decoration: none;
+.action-bar-header {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0.52632em;
 }
 .action-bar-title {
   display: block;
   font-weight: bold;
-  padding: 0.52632em;
 }
 .action-bar-start {
   border: 1px solid #dee0e2;
@@ -2387,6 +2388,7 @@ HTML Usage
 }
 .action-bar-start .action-bar-header {
   background-color: #fff;
+  text-decoration: none;
 }
 .action-bar-start .action-bar-header-secondary {
   background-color: #d8eeff;
@@ -2421,10 +2423,88 @@ HTML Usage
     background-size: 100%;
   }
 }
+.action-bar-completed .action-bar-header {
+  display: table;
+  width: 100%;
+}
+.action-bar-completed .action-bar-title {
+  font-weight: normal;
+  display: table-cell;
+  padding-right: 1.05263em;
+  vertical-align: top;
+}
+.action-bar-completed .action-bar-options {
+  display: table-cell;
+  font-size: 16px;
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.action-bar-completed .action-bar-action {
+  display: inline-block;
+  margin-left: 0.625em;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.action-bar-completed .action-bar-status {
+  background-color: #fff;
+  border: 2px solid #fff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.1875em 0.375em;
+  vertical-align: middle;
+}
+.action-bar-completed .action-bar-status:after {
+  background-image: url("/public/images/actionbar-status-done.png");
+  content: '';
+  display: inline-block;
+  height: 11px;
+  width: 14px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .action-bar-completed .action-bar-status:after {
+    background-image: url("/public/images/actionbar-status-done-2x.png");
+    background-size: 100%;
+  }
+}
+.action-bar-completed .action-bar-status-saved {
+  border-color: #28a197;
+  color: #28a197;
+}
+.action-bar-completed .action-bar-status-saved:before {
+  content: 'Saved';
+}
+.action-bar-completed .action-bar-status-saved:after {
+  background-image: url("/public/images/actionbar-status-saved.png");
+  margin-left: 0.26316em;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .action-bar-completed .action-bar-status-saved:after {
+    background-image: url("/public/images/actionbar-status-saved-2x.png");
+    background-size: 100%;
+  }
+}
 
 /*
 
 HTML Usage
+
+<div class="action-bar action-bar-start">
+  <a class="action-bar-header" href="#">
+    <span class="action-bar-title">Record case strengths, weaknesses and strategy</span>
+  </a>
+</div>
+
+OR
+
+<div class="action-bar action-bar-completed">
+  <div class="action-bar-header">
+    <span class="action-bar-title">ECHR doesn&rsquo;t apply</span>
+    <span class="action-bar-options">
+      <span class="action-bar-status action-bar-status-saved">Saved</span><a class="action-bar-action" href="#">Amend</a>
+    </span>
+  </div>
+</div>
 
 */
 .pagination {
