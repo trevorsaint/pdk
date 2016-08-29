@@ -1,171 +1,179 @@
   <section aria-labelledby="radio-buttons">
-  
+
     <h3 class="heading-medium" id="radio-buttons">Radio buttons</h3>
-    
+
     <ul class="text list list-bullet">
       <li>use these to let users choose a single option from a list</li>
       <li>for more than two options, radio buttons should be stacked</li>
       <li>radio buttons with large hit areas are easier to select with a mouse or touch devices</li>
     </ul>
-    
+
     <h4 class="heading-small">Inline radio buttons</h4>
-    
+
     <div class="example">
-      
+
       <h2 class="heading-medium">Do you already have a personal user account?</h2>
-      
+
       <form class="form">
-        
+
         <fieldset class="inline">
-          
+
           <legend class="visuallyhidden">Do you already have a personal user account?</legend>
-          
+
           <label class="block-label" for="personal-user-account-yes">
-            <input id="personal-user-account-yes" type="radio" name="personal-user-account" value="Yes"> 
+            <input id="personal-user-account-yes" type="radio" name="personal-user-account" value="Yes">
           Yes</label>
-          
+
           <label class="block-label" for="personal-user-account-no">
-            <input id="personal-user-account-no" type="radio" name="personal-user-account" value="No"> 
+            <input id="personal-user-account-no" type="radio" name="personal-user-account" value="No">
           No</label>
-          
+
         </fieldset>
-        
+
       </form>
-      
+
     </div>
-    
+
     <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
   &#x3C;fieldset class=&#x22;inline&#x22;&#x3E;
-    
+
     &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;Do you already have a personal user account?&#x3C;/legend&#x3E;
-    
+
     &#x3C;label class=&#x22;block-label&#x22; for=&#x22;personal-user-account-yes&#x22;&#x3E;
-      &#x3C;input id=&#x22;personal-user-account-yes&#x22; type=&#x22;radio&#x22; name=&#x22;personal-user-account&#x22; value=&#x22;Yes&#x22;&#x3E; 
+      &#x3C;input id=&#x22;personal-user-account-yes&#x22; type=&#x22;radio&#x22; name=&#x22;personal-user-account&#x22; value=&#x22;Yes&#x22;&#x3E;
       Yes
     &#x3C;/label&#x3E;
-    
+
     &#x3C;label class=&#x22;block-label&#x22; for=&#x22;personal-user-account-no&#x22;&#x3E;
-      &#x3C;input id=&#x22;personal-user-account-no&#x22; type=&#x22;radio&#x22; name=&#x22;personal-user-account&#x22; value=&#x22;No&#x22;&#x3E; 
+      &#x3C;input id=&#x22;personal-user-account-no&#x22; type=&#x22;radio&#x22; name=&#x22;personal-user-account&#x22; value=&#x22;No&#x22;&#x3E;
       No
     &#x3C;/label&#x3E;
-    
+
   &#x3C;/fieldset&#x3E;
     </code></pre></div>
-    
+
     <h4 class="heading-small">Stacked radio buttons</h4>
-    
+
     <div class="example">
-      
+
       <h2 class="heading-medium">Where do you live?</h2>
-      
+
       <form class="form">
-        
+
         <fieldset>
-          
+
           <legend class="visuallyhidden">Where do you live?</legend>
 
           <label class="block-label" for="northern-ireland">
             <input id="northern-ireland" type="radio" name="where-do-you-live" value="Northern Ireland">
             Northern Ireland
           </label>
-          
+
           <label class="block-label" for="isle-of-man">
             <input id="isle-of-man" type="radio" name="where-do-you-live" value="Isle of Man or the Channel Islands">
             Isle of Man or the Channel Islands
           </label>
-          
+
           <p class="form-block">or</p>
-          
+
           <label class="block-label" for="british-citizen">
             <input id="british-citizen" type="radio" name="where-do-you-live" value="I am a British citizen living abroad">
             I am a British citizen living abroad
           </label>
-          
+
         </fieldset>
-        
+
       </form>
-      
+
     </div>
-    
+
     <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
   &#x3C;fieldset&#x3E;
-            
+
     &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;Where do you live?&#x3C;/legend&#x3E;
-  
+
     &#x3C;label class=&#x22;block-label&#x22; for=&#x22;northern-ireland&#x22;&#x3E;
       &#x3C;input id=&#x22;northern-ireland&#x22; type=&#x22;radio&#x22; name=&#x22;where-do-you-live&#x22; value=&#x22;Northern Ireland&#x22;&#x3E;
       Northern Ireland
     &#x3C;/label&#x3E;
-    
+
     &#x3C;label class=&#x22;block-label&#x22; for=&#x22;isle-of-man&#x22;&#x3E;
       &#x3C;input id=&#x22;isle-of-man&#x22; type=&#x22;radio&#x22; name=&#x22;where-do-you-live&#x22; value=&#x22;Isle of Man&#x22;&#x3E;
       Isle of Man or the Channel Islands
     &#x3C;/label&#x3E;
-    
+
     &#x3C;p class=&#x22;form-block&#x22;&#x3E;or&#x3C;/p&#x3E;
-    
+
     &#x3C;label class=&#x22;block-label&#x22; for=&#x22;british-citizen&#x22;&#x3E;
       &#x3C;input id=&#x22;british-citizen&#x22; type=&#x22;radio&#x22; name=&#x22;where-do-you-live&#x22; value=&#x22;British citizen&#x22;&#x3E;
       I am a British citizen living abroad
     &#x3C;/label&#x3E;
-    
+
   &#x3C;/fieldset&#x3E;
     </code></pre></div>
-    
+
     <div class="example">
-      
-      <h2 class="heading-medium">Which part of the Housing Act was your licence isued under?</h2>
-      
-      <p>Select one of the options below.</p>
-      
-      <form class="form">
-        
-        <fieldset>
 
-          <legend class="visuallyhidden">Which part of the Housing Act was your licence isued under?</legend>
+      <div class="grid-row">
 
-          <label class="block-label" for="radio-part-2">
-            <input type="radio" id="radio-part-2" name="housing-act" value="Part 2">
-            <span class="heading-small">Part 2 of the Housing Act 2004</span><br>
-            For properties that are 3 or more stories high and occupied by 5 or more people
-          </label>
+        <div class="column-two-thirds">
 
-          <label class="block-label" for="radio-part-3">
-            <input type="radio" id="radio-part-3" name="housing-act" value="Part 3">
-            <span class="heading-small">Part 3 of the Housing Act 2004</span><br>
-            For properties that are within a geographical area defined by a local council
-          </label>
+          <h2 class="heading-medium">Which part of the Housing Act was your licence isued under?</h2>
 
-        </fieldset>
-        
-      </form>
-      
+          <p>Select one of the options below.</p>
+
+          <form class="form">
+
+            <fieldset>
+
+              <legend class="visuallyhidden">Which part of the Housing Act was your licence isued under?</legend>
+
+              <label class="block-label" for="radio-part-2">
+                <input type="radio" id="radio-part-2" name="housing-act" value="Part 2">
+                <span class="heading-small">Part 2 of the Housing Act 2004</span><br>
+                For properties that are 3 or more stories high and occupied by 5 or more people
+              </label>
+
+              <label class="block-label" for="radio-part-3">
+                <input type="radio" id="radio-part-3" name="housing-act" value="Part 3">
+                <span class="heading-small">Part 3 of the Housing Act 2004</span><br>
+                For properties that are within a geographical area defined by a local council
+              </label>
+
+            </fieldset>
+
+          </form>
+
+        </div>
+
+      </div>
+
     </div>
-    
+
     <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
   &#x3C;h2 class=&#x22;heading-medium&#x22;&#x3E;Which part of the Housing Act was your licence...&#x3C;/h2&#x3E;
-        
+
   &#x3C;p&#x3E;Select one of the options below.&#x3C;/p&#x3E;
-  
+
   &#x3C;fieldset&#x3E;
-  
+
     &#x3C;legend class=&#x22;visuallyhidden&#x22;&#x3E;Which part of the Housing Act was your licence...&#x3C;/legend&#x3E;
-  
+
     &#x3C;label class=&#x22;block-label&#x22; for=&#x22;radio-part-2&#x22;&#x3E;
       &#x3C;input type=&#x22;radio&#x22; id=&#x22;radio-part-2&#x22; name=&#x22;housing-act&#x22; value=&#x22;Part 2&#x22;&#x3E;
       &#x3C;span class=&#x22;heading-small&#x22;&#x3E;Part 2 of the Housing Act 2004&#x3C;/span&#x3E;&#x3C;br&#x3E;
       For properties that are 3 or more stories high and occupied by 5 or more people
     &#x3C;/label&#x3E;
-  
+
     &#x3C;label class=&#x22;block-label&#x22; for=&#x22;radio-part-3&#x22;&#x3E;
       &#x3C;input type=&#x22;radio&#x22; id=&#x22;radio-part-3&#x22; name=&#x22;housing-act&#x22; value=&#x22;Part 3&#x22;&#x3E;
       &#x3C;span class=&#x22;heading-small&#x22;&#x3E;Part 3 of the Housing Act 2004&#x3C;/span&#x3E;&#x3C;br&#x3E;
       For properties that are within a geographical area defined by a local council
     &#x3C;/label&#x3E;
-  
+
   &#x3C;/fieldset&#x3E;
     </code></pre></div>
-  
+
   </section>
-  
+
   <p class="font-xsmall"><a href="#toc">Back to the top</a></p>
