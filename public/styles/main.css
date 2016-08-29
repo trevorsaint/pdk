@@ -2373,39 +2373,57 @@ HTML Usage
 <span class="status-label">Awaiting Plea</span>
 
 */
-.action-bar {
-  /*&-heading {
-    overflow: hidden;
-  }  
-  
-  &-content {
-    float: right;
-  }*/
+.action-bar a {
+  text-decoration: none;
 }
-.action-bar-item {
-  padding: 0.78947em;
-  overflow: hidden;
-}
-.action-bar-item-start {
-  background-color: #d5e8f3;
-  box-shadow: inset 0 -2px 0 0 #96c6e2;
-}
-.action-bar-item.is-complete {
-  padding-left: 0;
-  padding-right: 0;
+.action-bar-title {
+  display: block;
+  font-weight: bold;
+  padding: 0.52632em;
 }
 .action-bar-start {
-  font-weight: bold;
+  border: 1px solid #dee0e2;
+  border-bottom: 3px solid #dee0e2;
 }
-.action-bar-heading {
-  float: left;
+.action-bar-start .action-bar-header {
+  background-color: #fff;
 }
-.action-bar-content {
-  overflow: hidden;
+.action-bar-start .action-bar-header-secondary {
+  background-color: #d8eeff;
+  color: #0b0c0c;
+}
+.action-bar-start .action-bar-title {
+  padding-right: 1.57895em;
+}
+.action-bar-start a {
+  display: block;
+  position: relative;
+}
+.action-bar-start a:after {
+  background-image: url("/public/images/actionbar-arrow.png");
+  content: '';
+  display: block;
+  height: 16px;
+  position: absolute;
+  right: 0.52632em;
+  top: 0.63158em;
+  width: 10px;
+}
+@media (min-width: 769px) {
+  .action-bar-start a:after {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .action-bar-start a:after {
+    background-image: url("/public/images/actionbar-arrow-2x.png");
+    background-size: 100%;
+  }
 }
 
 /*
-  
+
 HTML Usage
 
 */
@@ -3379,6 +3397,7 @@ HTML Usage
   top: 0;
   right: 0;
   text-transform: uppercase;
+  z-index: 10;
 }
 @media (min-width: 641px) {
   .example:before {

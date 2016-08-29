@@ -10,7 +10,7 @@ $module: 'example';
   overflow: auto;
   padding: em(30);
   position: relative;
-  
+
   &:before {
     @include core-14;
     background-color: $grey-2;
@@ -19,18 +19,19 @@ $module: 'example';
     padding: em(10);
     position: absolute; top: 0; right: 0;
     text-transform: uppercase;
+    z-index: 10;
   }
-  
+
   &-deprecated {
     border-color: $red;
-    
+
     &:before {
       background-color: $red;
       content: 'Deprecated Example';
     }
-    
+
   }
-  
+
 }
 
 $module: 'highlight';
@@ -43,11 +44,11 @@ $module: 'highlight';
 $module: 'toc';
 
 .#{$module} {
-  
+
   .list li {
     list-style: none;
   }
-  
+
 }
 
 $module: 'code-example';
@@ -57,15 +58,15 @@ $module: 'code-example';
   font-size: 16px;
   margin-bottom: em(20);
   overflow: hidden;
-  
+
   .prettyprint {
     background: $grey-4;
   }
-  
+
   @include media(desktop) {
-    display: block;  
+    display: block;
   }
-  
+
 }
 
 // colour swatches
@@ -230,16 +231,16 @@ $palette: (
       padding-top: 10px;
     }
   }
-  
+
   li {
     @include core-16;
   }
-  
+
   b {
     font-weight: bold;
     text-transform: uppercase;
   }
-  
+
 }
 
 

@@ -4,48 +4,73 @@
 $module: 'action-bar';
 
 .#{$module} {
-  
-  &-item {
-    padding: em(15);
-    overflow: hidden;
-    
-    &-start {
-      background-color: #d5e8f3;
-      box-shadow: inset 0 -2px 0 0 #96c6e2;
-    }
-    
-    &.is-complete {
-      padding-left: 0;
-      padding-right: 0;
-    }
-    
+
+  // shared style
+  a {
+    text-decoration: none;
   }
-  
-  &-start {
+
+  &-title {
+    display: block;
     font-weight: bold;
-  }  
-  
-  /*&-heading {
-    overflow: hidden;
-  }  
-  
-  &-content {
-    float: right;
-  }*/  
-  
-  
-  &-heading {
-    float: left;
-  }  
-  
-  &-content {
-    overflow: hidden;
+    padding: em(10);
   }
-  
+
+  // start
+  &-start {
+    border: 1px solid $panel-colour;
+    border-bottom: 3px solid $panel-colour;
+
+    .#{$module}-header {
+      background-color: $white;
+
+      &-secondary {
+        background-color: lighten($govuk-blue, 60%);
+        color: $text-colour;
+      }
+
+    }
+
+    .#{$module}-title {
+      padding-right: em(30);
+    }
+
+    a {
+      display: block;
+      position: relative;
+
+      &:after {
+        background-image: file-url('actionbar-arrow.png');
+        content: '';
+        display: block;
+        height: 16px;
+        position: absolute; right: em(10); top: em(12);
+        width: 10px;
+
+        @include media(desktop) {
+          top: 50%;
+          transform: translateY(-50%); // ie9+
+        }
+
+        @include device-pixel-ratio() {
+          background-image: file-url('actionbar-arrow-2x.png');
+          background-size: 100%;
+        }
+
+      }
+    }
+
+  }
+
+  // completed
+  &-completed {
+
+  }
+
 }
 
 /*
-  
+
 HTML Usage
 
 */
