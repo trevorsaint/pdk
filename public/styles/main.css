@@ -2741,32 +2741,33 @@ HTML Usage
 }
 @media (min-width: 641px) {
   .tabs [role='tab'] {
+    background-color: #dee0e2;
     text-decoration: none;
   }
   .tabs [role='tab'][aria-selected='true'] {
+    background-color: #fff;
+    color: #0b0c0c;
     cursor: default;
   }
-  .tabs [role='tablist'] {
-    margin: 0;
+  .tabs [role='tab'][aria-selected='true']:focus {
+    border: 0;
   }
-  .tabs [role='tablist'] li {
+  .tabs [role='tablist'],
+  .tabs [role='presentation'] {
     margin: 0;
   }
 }
 @media (min-width: 641px) {
   .tabs-horizontal [role='tab'] {
-    background-color: #dee0e2;
     float: left;
     margin: 0.26316em 0.26316em 0.26316em 0;
     padding: 0.47368em 0.78947em;
     text-align: center;
   }
   .tabs-horizontal [role='tab'][aria-selected='true'] {
-    background-color: white;
     border-left: 1px solid #bfc1c3;
     border-right: 1px solid #bfc1c3;
     border-top: 1px solid #bfc1c3;
-    color: #0b0c0c;
     margin-bottom: 0;
     margin-top: 0;
     padding: 0.63158em 0.73684em 0.78947em;
@@ -2774,7 +2775,6 @@ HTML Usage
     bottom: -1px;
   }
   .tabs-horizontal [role='tab'][aria-selected='true']:focus {
-    border: 0;
     padding: 0.68421em 0.78947em;
   }
   .tabs-horizontal [role='tabpanel'] {
@@ -2785,32 +2785,38 @@ HTML Usage
   .tabs-horizontal [role='tabpanel'] *:first-of-type {
     margin-top: 0;
   }
+  .tabs-vertical [role='presentation'] {
+    margin-top: 0.26316em;
+  }
   .tabs-vertical [role='tab'] {
     display: block;
-    padding: 15px;
+    margin-right: 0.31579em;
+    padding: 0.57895em 0.52632em 0.57895em 0.57895em;
   }
   .tabs-vertical [role='tab'][aria-selected='true'] {
-    background-color: #005ea5;
-    color: white;
-    margin: -1px -2px -1px -1px;
-    padding: 16px 17px 16px 16px;
-    position: relative;
+    border-left: 1px solid #bfc1c3;
+    border-bottom: 1px solid #bfc1c3;
+    border-top: 1px solid #bfc1c3;
+    margin-right: 0;
+    padding: 0.52632em 0.78947em 0.52632em 0.52632em;
+  }
+  .tabs-vertical [role='tab'][aria-selected='true']:focus {
+    padding: 0.57895em 0.52632em 0.57895em 0.57895em;
   }
   .tabs-vertical [role='tablist'] {
-    border: 1px solid #bfc1c3;
     float: left;
     margin-right: -1px;
     max-width: 170px;
     position: relative;
   }
-  .tabs-vertical [role='tablist'] li {
-    border-top: 1px solid #bfc1c3;
+  .tabs-vertical [role='presentation'] {
+    margin-top: 0.26316em;
   }
-  .tabs-vertical [role='tablist'] li:first-child {
-    border-top: 0;
+  .tabs-vertical [role='presentation']:first-child {
+    margin-top: 0;
   }
   .tabs-vertical [role='tabpanel'] {
-    border: 2px solid #bfc1c3;
+    border: 1px solid #bfc1c3;
     overflow: hidden;
     padding: 11px;
   }

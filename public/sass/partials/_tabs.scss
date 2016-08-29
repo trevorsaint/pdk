@@ -17,21 +17,25 @@ $module: 'tabs';
   @include media(tablet) {
     
     [role='tab'] {
+      background-color: $grey-3;
       text-decoration: none;
       
       &[aria-selected='true'] {
+        background-color: $white;
+        color: $text-colour;
         cursor: default;
+        
+        &:focus {
+          border: 0;
+        }
+        
       }
       
     }
      
-    [role='tablist'] {
+    [role='tablist'], 
+    [role='presentation'] {
       margin: 0;
-      
-      li {
-        margin: 0;
-      }
-      
     }
      
   }
@@ -41,26 +45,22 @@ $module: 'tabs';
     // tabs horizontal only styles
     &-horizontal {
       
-      [role='tab'] {
-        background-color: $grey-3;
+      [role='tab'] {        
         float: left;
         margin: em(5) em(5) em(5) 0;
         padding: em(9) em(15);
         text-align: center;
         
         &[aria-selected='true'] {
-          background-color: white;
           border-left: 1px solid $grey-2;
           border-right: 1px solid $grey-2;
-          border-top: 1px solid $grey-2;
-          color: $text-colour;
+          border-top: 1px solid $grey-2;          
           margin-bottom: 0;
           margin-top: 0;
           padding: em(12) em(14) em(15);
           position: relative; bottom: -1px;
           
-          &:focus {
-            border: 0;
+          &:focus {            
             padding: em(13) em(15);
           }
                     
@@ -85,40 +85,47 @@ $module: 'tabs';
     // tabs vertical only styles
     &-vertical {
       
-      [role='tab'] {
-        display: block;
-        padding: $gutter-half;
-        
-        &[aria-selected='true'] {
-          background-color: $govuk-blue;
-          color: white;
-          margin: -1px -2px -1px -1px;
-          padding: 16px 17px 16px 16px;
-          position: relative;
-        }
-        
+      [role='presentation'] {
+        margin-top: em(5);
       }
       
-      [role='tablist'] {
-        border: 1px solid $grey-2;
-        float: left;
-        margin-right: -1px;
-        max-width: 170px;
-        position: relative;
+      [role='tab'] {
+        display: block;
+        margin-right: em(6);
+        padding: em(11) em(10) em(11) em(11);
         
-        li {
+        &[aria-selected='true'] {
+          border-left: 1px solid $grey-2;
+          border-bottom: 1px solid $grey-2;
           border-top: 1px solid $grey-2;
+          margin-right: 0;
+          padding: em(10) em(15) em(10) em(10);
           
-          &:first-child {
-            border-top: 0;
+          &:focus {
+            padding: em(11) em(10) em(11) em(11);
           }
           
         }
         
       }
       
+      [role='tablist'] {
+        float: left;
+        margin-right: -1px;
+        max-width: 170px;
+        position: relative;
+      }      
+      
+      [role='presentation'] {
+        margin-top: em(5);
+        
+        &:first-child {
+          margin-top: 0;
+        }
+      }      
+      
       [role='tabpanel'] {
-        border: 2px solid #bfc1c3;
+        border: 1px solid #bfc1c3;
         overflow: hidden;
         padding: $gutter-half - 4;
         
