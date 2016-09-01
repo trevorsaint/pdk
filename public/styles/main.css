@@ -1872,6 +1872,23 @@ input[type=number] {
     display: revert;
   }
 }
+.persist-info:before, .pagination:before, .persist-info:after, .pagination:after {
+  content: '';
+  display: table;
+}
+.persist-info:after, .pagination:after {
+  clear: both;
+}
+
+/*
+
+CSS Usage
+
+.element {
+  @extend %clearfix;
+}
+
+*/
 .button-secondary {
   background-color: #dee0e2;
   position: relative;
@@ -2191,7 +2208,7 @@ HTML Usage
   text-transform: none;
   background-color: #005ea5;
   color: white;
-  padding: 15px;
+  padding: 5px;
 }
 @media (min-width: 641px) {
   .persist-info {
@@ -2199,20 +2216,69 @@ HTML Usage
     line-height: 1.25;
   }
 }
-.persist-info-reference {
-  float: left;
-  margin-right: 10px;
-}
-.persist-info-title {
+.persist-info a {
+  color: #fff;
   display: block;
   overflow: hidden;
-  font-weight: 700;
+}
+.persist-info a:focus {
+  color: #0b0c0c;
+}
+.persist-info-links {
+  overflow: hidden;
+  padding: 10px;
+}
+.persist-info-links li {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: top;
+}
+.persist-info-links li:first-child {
+  margin-left: 0;
+}
+.persist-info-marker {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+@media (min-width: 641px) {
+  .persist-info-marker {
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+}
+.persist-info-marker-sensitive {
+  background-color: #ffbf47;
+  color: #0b0c0c;
+}
+.persist-info-reference {
+  display: inline-block;
+  padding: 10px 0 10px 10px;
+}
+.persist-info-title {
+  display: inline-block;
+  padding: 10px 0 10px 10px;
+}
+@media (min-width: 769px) {
+  .persist-info-content {
+    float: left;
+  }
+  .persist-info-links {
+    margin-top: 0;
+    text-align: right;
+  }
 }
 
 /*
-  
+
 HTML Usage
-  
+
 <div class="persist-info">
   <span class="persist-info-reference">12AA3456716</span>
   <span class="persist-info-title">Joseph BLOGGS</span>
@@ -3465,7 +3531,7 @@ HTML Usage
   }
 }
 
-.pagination:after {
+.persist-info:after, .pagination:after {
   content: '';
   display: table;
   clear: both;

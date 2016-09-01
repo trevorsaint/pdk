@@ -1,39 +1,145 @@
   <section aria-labelledby="persist-info">
-  
+
     <h3 class="heading-medium" id="persist-info">Persist info</h3>
-    
+
     <p>Persist information is a highlighted heading for a page that requires it.</p>
-    
+
+    <h4 class="heading-small">One name with text links (C2I)</h4>
+
     <div class="example">
-      
+
       <div class="persist-info">
-        <span class="persist-info-reference">12AA3456716</span>
-        <span class="persist-info-title">Joseph BLOGGS</span>
+
+        <div class="persist-info-content">
+          <span class="persist-info-reference">12AA3456716</span>
+          <span class="persist-info-title"><b>J. BLOGGS</b></span>
+        </div>
+
+        <ul class="persist-info-links">
+          <li><a href="#">Case options</a></li>
+          <li><a href="#">Timelines</a></li>
+        </ul>
+
       </div>
-      
-      <br>
-      
-      <div class="persist-info">
-        <span class="persist-info-reference">55DP0028116</span>
-        <span class="persist-info-title">Peter JAMES and 1 other</span>
-      </div>
-      
-      <br>
-      
-      <div class="persist-info">
-        <span class="persist-info-reference">78GQ0618124</span>
-        <span class="persist-info-title">Mary SMITH and 2 others</span>
-      </div>
-      
+
     </div>
-  
-  </section>
-  
-  <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
   &#x3C;div class=&#x22;persist-info&#x22;&#x3E;
-    &#x3C;span class=&#x22;persist-info-reference&#x22;&#x3E;12AA3456716&#x3C;/span&#x3E;
-    &#x3C;span class=&#x22;persist-info-title&#x22;&#x3E;Joseph BLOGGS&#x3C;/span&#x3E;
+
+    &#x3C;div class=&#x22;persist-info-content&#x22;&#x3E;
+      &#x3C;span class=&#x22;persist-info-reference&#x22;&#x3E;12AA3456716&#x3C;/span&#x3E;
+      &#x3C;span class=&#x22;persist-info-title&#x22;&#x3E;&#x3C;b&#x3E;J. BLOGGS&#x3C;/b&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;ul class=&#x22;persist-info-links&#x22;&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Case options&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Timelines&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+
   &#x3C;/div&#x3E;
-  </code></pre></div>
-  
+    </code></pre></div>
+
+    <h4 class="heading-small">Multiple names with text links (C2I)</h4>
+
+    <div class="example">
+
+      <div class="persist-info">
+
+        <div class="persist-info-content">
+          <span class="persist-info-reference">55DP0028116</span>
+          <span class="persist-info-title"><b>E.COWAN, E.MICHAELS and W.PICKUP</b></span>
+        </div>
+
+        <ul class="persist-info-links">
+          <li><a href="#">Case options</a></li>
+          <li><a href="#">Timelines</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;persist-info&#x22;&#x3E;
+
+    &#x3C;div class=&#x22;persist-info-content&#x22;&#x3E;
+      &#x3C;span class=&#x22;persist-info-reference&#x22;&#x3E;55DP0028116&#x3C;/span&#x3E;
+      &#x3C;span class=&#x22;persist-info-title&#x22;&#x3E;&#x3C;b&#x3E;E.COWAN, E.MICHAELS and W.PICKUP&#x3C;/b&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;ul class=&#x22;persist-info-links&#x22;&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Case options&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Timelines&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+
+  &#x3C;/div&#x3E;
+    </code></pre></div>
+
+    <h4 class="heading-small">Case marked as &ldquo;sensitive&rdquo; (C2I)</h4>
+
+    <div class="example">
+
+      <div class="persist-info">
+
+        <div class="persist-info-content">
+          <span class="persist-info-marker persist-info-marker-sensitive">Sensitive</span>
+          <span class="persist-info-reference">55DP0028116</span>
+          <span class="persist-info-title"><b>E. TIBBS and C. MOORE</b></span>
+        </div>
+
+        <ul class="persist-info-links">
+          <li><a href="#">Case options</a></li>
+          <li><a href="#">Timelines</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;persist-info&#x22;&#x3E;
+
+    &#x3C;div class=&#x22;persist-info-content&#x22;&#x3E;
+      &#x3C;span class=&#x22;persist-info-marker persist-info-marker-sensitive&#x22;&#x3E;Sensitive&#x3C;/span&#x3E;
+      &#x3C;span class=&#x22;persist-info-reference&#x22;&#x3E;55DP0028116&#x3C;/span&#x3E;
+      &#x3C;span class=&#x22;persist-info-title&#x22;&#x3E;&#x3C;b&#x3E;E. TIBBS and C. MOORE&#x3C;/b&#x3E;&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+
+    &#x3C;ul class=&#x22;persist-info-links&#x22;&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Case options&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Timelines&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;/ul&#x3E;
+
+  &#x3C;/div&#x3E;
+    </code></pre></div>
+
+    <h4 class="heading-small">Multiple names with no text links (I2T)</h4>
+
+    <div class="example">
+
+      <div class="persist-info">
+
+        <div class="persist-info-content">
+          <span class="persist-info-reference">78GQ0618124</span>
+          <span class="persist-info-title">William <b>DONADSON</b>, Edward <b>HARRISON</b>, Edgar <b>MORENO</b>, Andrew <b>SMITHERS</b></span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+  &#x3C;div class=&#x22;persist-info&#x22;&#x3E;
+
+    &#x3C;div class=&#x22;persist-info-content&#x22;&#x3E;
+      &#x3C;span class=&#x22;persist-info-reference&#x22;&#x3E;78GQ0618124&#x3C;/span&#x3E;
+      &#x3C;span class=&#x22;persist-info-title&#x22;&#x3E;William &#x3C;b&#x3E;DONADSON&#x3C;/b&#x3E;, Edward &#x3C;b&#x3E;HARRISON&#x3C;/b&#x3E;...&#x3C;/span&#x3E;
+    &#x3C;/div&#x3E;
+
+  &#x3C;/div&#x3E;
+    </code></pre></div>
+
+  </section>
+
   <p class="font-xsmall"><a href="#toc">Back to the top</a></p>
