@@ -2709,14 +2709,36 @@ HTML Usage
 </ul>
 
 */
-.file-download .icon {
+.document .icon {
   float: left;
-  margin-right: 10px;
+  margin-right: 0.52632em;
 }
-.file-download-content {
+.document-thumbnail {
+  background-image: url("/public/images/document-thumbnail.png");
+  border: 1px solid #bfc1c3;
+  float: left;
+  height: 140px;
+  margin-right: 0.78947em;
+  width: 99px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .document-thumbnail {
+    background-image: url("/public/images/document-thumbnail-2x.png");
+    background-size: 100%;
+  }
+}
+.document-thumbnail img {
+  max-width: 100%;
+  width: auto;
+}
+.document-title {
+  margin-top: 0;
+  margin-bottom: 0.52632em;
+}
+.document-content {
   overflow: hidden;
 }
-.file-download-meta {
+.document-meta {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.14286;
@@ -2725,26 +2747,53 @@ HTML Usage
   display: block;
 }
 @media (min-width: 641px) {
-  .file-download-meta {
+  .document-meta {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.document-meta-taken {
+  display: block;
+  margin-bottom: 0.3125em;
+}
+.document-meta-details {
+  display: block;
+}
+.document-small .document-title {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 0.3125em;
+}
+@media (min-width: 641px) {
+  .document-small .document-title {
     font-size: 16px;
     line-height: 1.25;
   }
 }
 
 /*
-  
-HTML Usage
-  
-<li class="file-download">
 
-  <i class="icon icon-file-download"></i>
-  
-  <div class="file-download-content">
-    <a href="#">SJP notice</a> 
-    <span class="file-download-meta"><abbr title="Portable Document Format">PDF</abbr>, 156KB</span>
+HTML Usage
+
+<div class="document">
+
+  <div class="document-thumbnail"></div>
+
+  <div class="document-content">
+
+    <p class="document-title"><a href="#">Statement 1 from Linda THOMAS</a></p>
+
+    <div class="document-meta">
+      <span class="document-meta-taken">Taken: <time datetime="2016-04-13">13 April 2016</time></span>
+      <span class="document-meta-details"><abbr title="Portable Document Format">PDF</abbr>, 715kb, 18 pages</span>
+    </div>
+
   </div>
-  
-</li>
+
+</div>
 
 */
 .notification {
@@ -3062,9 +3111,9 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
-   
+
 <i class="icon icon-tick" role="presentation" aria-hidden="true"></i>
 
 <i class="icon icon-cross" role="presentation" aria-hidden="true"></i>
