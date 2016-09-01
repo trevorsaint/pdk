@@ -2208,7 +2208,7 @@ HTML Usage
   text-transform: none;
   background-color: #005ea5;
   color: white;
-  padding: 5px;
+  padding: 0.3125em;
 }
 @media (min-width: 641px) {
   .persist-info {
@@ -2226,12 +2226,12 @@ HTML Usage
 }
 .persist-info-links {
   overflow: hidden;
-  padding: 10px;
+  padding: 0.52632em;
 }
 .persist-info-links li {
   display: inline-block;
-  margin-left: 15px;
-  vertical-align: top;
+  margin-left: 0.9375em;
+  vertical-align: middle;
 }
 .persist-info-links li:first-child {
   margin-left: 0;
@@ -2242,10 +2242,11 @@ HTML Usage
   line-height: 1.25;
   font-weight: 400;
   text-transform: none;
-  padding: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
   display: inline-block;
+  font-weight: 700;
+  padding: 0.71429em;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 @media (min-width: 641px) {
   .persist-info-marker {
@@ -2259,11 +2260,13 @@ HTML Usage
 }
 .persist-info-reference {
   display: inline-block;
-  padding: 10px 0 10px 10px;
+  padding: 0.625em 0 0.625em 0.625em;
+  vertical-align: middle;
 }
 .persist-info-title {
   display: inline-block;
-  padding: 10px 0 10px 10px;
+  padding: 0.625em 0 0.625em 0.625em;
+  vertical-align: middle;
 }
 @media (min-width: 769px) {
   .persist-info-content {
