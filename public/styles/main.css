@@ -3478,13 +3478,13 @@ HTML Usage
   display: -moz-inline-stack;
   display: inline-block;
   background-color: #0b0c0c;
-  margin-left: 1.05263em;
   border: none;
   color: #fff;
   cursor: pointer;
   float: right;
   font-size: 1em;
-  min-width: 5em;
+  margin-left: 1.05263em;
+  min-width: 5.26316em;
   line-height: 1.25;
   padding: .526315em .789473em;
   width: auto;
