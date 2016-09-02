@@ -3483,9 +3483,9 @@ HTML Usage
   cursor: pointer;
   float: right;
   font-size: 1em;
+  line-height: 1.25;
   margin-left: 1.05263em;
   min-width: 5.26316em;
-  line-height: 1.25;
   padding: .526315em .789473em;
   width: auto;
 }
