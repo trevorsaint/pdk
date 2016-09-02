@@ -3629,12 +3629,6 @@ HTML Usage
   }
 }
 
-.persist-info:after, .pagination:after, .collapsibles-header:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 .example {
   border: 0.05263em solid #bfc1c3;
   margin-top: 0.78947em;
