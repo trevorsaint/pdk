@@ -1,29 +1,26 @@
 module.exports = {
 
-
 bind: function(app) {
-  
-  
-    // Locals
+
+    // locals
     app.locals = {
       serviceTitle: 'Platform Development Kit',
       baseurl: '/'
     }
-    
-    
-    // Routes
+
+    // routes
     app.get('/', function (req, res) {
       res.render('index', {
-        docTitle: 'PLatform Development Kit',
+        docTitle: 'Platform Development Kit',
         pageTitle: 'Platform Development Kit',
         pageLead: 'Extends the <abbr title="Government Digital Services">GDS</abbr> GOV.UK packages for developing citizen and business facing services as a platform.',
         phaseBanner: true,
         isHome: true,
-        usePrettify: false
+        usePrettify: false,
+        breadcrumb: false
       });
     });
-    
-    
+
     app.get('/typography', function (req, res) {
       res.render('typography', {
         docTitle: 'Typography',
@@ -33,8 +30,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/buttons-and-filters', function (req, res) {
       res.render('buttons-and-filters', {
         docTitle: 'Buttons and filters',
@@ -43,8 +39,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/data', function (req, res) {
       res.render('data', {
         docTitle: 'Data',
@@ -54,8 +49,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/form-elements', function (req, res) {
       res.render('form-elements', {
         docTitle: 'Form elements',
@@ -65,8 +59,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/errors-and-validation', function (req, res) {
       res.render('errors-and-validation', {
         docTitle: 'Errors and validation',
@@ -76,8 +69,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/helper-classes', function (req, res) {
       res.render('helper-classes', {
         docTitle: 'Helper classes',
@@ -87,8 +79,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/banners', function (req, res) {
       res.render('banners', {
         docTitle: 'Banners',
@@ -98,8 +89,8 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
+
     app.get('/navigation', function (req, res) {
       res.render('navigation', {
         docTitle: 'Navigation',
@@ -109,8 +100,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/media', function (req, res) {
       res.render('media', {
         docTitle: 'Media',
@@ -120,8 +110,8 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
+
     app.get('/timeline', function (req, res) {
       res.render('timeline', {
         docTitle: 'Timeline',
@@ -131,8 +121,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/data-visualisation', function (req, res) {
       res.render('data-visualisation', {
         docTitle: 'Data visualisation',
@@ -142,8 +131,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/labels', function (req, res) {
       res.render('labels', {
         docTitle: 'Labels',
@@ -153,8 +141,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
+
     app.get('/colours', function (req, res) {
       res.render('colours', {
         docTitle: 'Colours',
@@ -164,9 +151,7 @@ bind: function(app) {
         usePrettify: true
       });
     });
-    
-    
-  }
 
+  }
 
 };

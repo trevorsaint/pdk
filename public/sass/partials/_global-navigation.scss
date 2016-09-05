@@ -1,0 +1,95 @@
+// Global navigation
+// ==========================================================================
+
+$module: 'navigation';
+
+.#{$module} {
+
+  .is-active {
+    display: inline-block;
+    position: relative;
+
+    a:link {
+      color: $black;
+      cursor: default;
+
+      &:focus {
+        background-color: transparent;
+        outline: none;
+      }
+
+    }
+
+    &:after {
+      background-color: $black;
+      content: '';
+      height: 5px;
+      position: absolute; bottom: -2px; left: 0;
+      width: 100%;
+      z-index: 2;
+    }
+
+  }
+
+  &-list {
+    list-style: none;
+
+    &-item {
+
+      a:link {
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+  &-list {
+    position: relative;
+    z-index: 2;
+
+    &-item {
+
+      a {
+        display: inline-block;
+        margin: 10px 0;
+        overflow: hidden;
+        vertical-align: top;
+      }
+
+    }
+
+    &-pre-charge {
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        background-color: $border-colour;
+        content: '';
+        display: block;
+        height: 2px;
+        position: relative; left: 0; top: 0;
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  // mobile
+  @include media(mobile) {
+
+    &-list {
+
+    }
+
+  }
+
+}
+
+/*
+
+HTML Usage
+
+*/

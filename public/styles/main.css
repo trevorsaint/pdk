@@ -2461,7 +2461,10 @@ HTML Usage
 */
 .action-bar-header {
   box-sizing: border-box;
-  overflow: hidden;
+  padding: 0.52632em;
+}
+.action-bar-content {
+  box-sizing: border-box;
   padding: 0.52632em;
 }
 .action-bar-title {
@@ -2509,15 +2512,22 @@ HTML Usage
     background-size: 100%;
   }
 }
+.action-bar-completed {
+  padding: 0 0.52632em 0.52632em;
+}
 .action-bar-completed .action-bar-header {
   display: table;
+  padding: 0;
   width: 100%;
+}
+.action-bar-completed .action-bar-content {
+  padding: 0;
 }
 .action-bar-completed .action-bar-title {
   font-weight: normal;
   display: table-cell;
   padding-right: 1.05263em;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .action-bar-completed .action-bar-options {
   display: table-cell;
@@ -2540,11 +2550,15 @@ HTML Usage
   padding: 0.1875em 0.375em;
   vertical-align: middle;
 }
+.action-bar-completed .action-bar-status:before {
+  content: attr(data-status-title);
+}
 .action-bar-completed .action-bar-status:after {
   background-image: url("/public/images/actionbar-status-done.png");
   content: '';
   display: inline-block;
   height: 11px;
+  margin-left: 0.26316em;
   width: 14px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -2557,12 +2571,8 @@ HTML Usage
   border-color: #28a197;
   color: #28a197;
 }
-.action-bar-completed .action-bar-status-saved:before {
-  content: 'Saved';
-}
 .action-bar-completed .action-bar-status-saved:after {
   background-image: url("/public/images/actionbar-status-saved.png");
-  margin-left: 0.26316em;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .action-bar-completed .action-bar-status-saved:after {
@@ -2587,7 +2597,7 @@ OR
   <div class="action-bar-header">
     <span class="action-bar-title">ECHR doesn&rsquo;t apply</span>
     <span class="action-bar-options">
-      <span class="action-bar-status action-bar-status-saved">Saved</span><a class="action-bar-action" href="#">Amend</a>
+      <span class="action-bar-status action-bar-status-saved" data-status-title="Saved"></span><a class="action-bar-action" href="#">Amend</a>
     </span>
   </div>
 </div>
@@ -2966,6 +2976,65 @@ HTML Usage
 
 /*
   
+HTML Usage
+
+*/
+.navigation .is-active {
+  display: inline-block;
+  position: relative;
+}
+.navigation .is-active a:link {
+  color: #0b0c0c;
+  cursor: default;
+}
+.navigation .is-active a:link:focus {
+  background-color: transparent;
+  outline: none;
+}
+.navigation .is-active:after {
+  background-color: #0b0c0c;
+  content: '';
+  height: 5px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.navigation-list {
+  list-style: none;
+}
+.navigation-list-item a:link {
+  font-weight: 700;
+  text-decoration: none;
+}
+.navigation-list {
+  position: relative;
+  z-index: 2;
+}
+.navigation-list-item a {
+  display: inline-block;
+  margin: 10px 0;
+  overflow: hidden;
+  vertical-align: top;
+}
+.navigation-list-pre-charge {
+  position: relative;
+  z-index: 1;
+}
+.navigation-list-pre-charge:before {
+  background-color: #bfc1c3;
+  content: '';
+  display: block;
+  height: 2px;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/*
+
 HTML Usage
 
 */
