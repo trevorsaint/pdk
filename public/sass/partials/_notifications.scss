@@ -22,6 +22,11 @@ $module: 'notification';
 
     a {
       color: $white;
+
+      &:focus {
+        color: $black;
+      }
+
     }
 
   }

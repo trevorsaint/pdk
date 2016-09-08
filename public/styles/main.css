@@ -2832,6 +2832,9 @@ HTML Usage
 .notification-message a {
   color: #fff;
 }
+.notification-message a:focus {
+  color: #0b0c0c;
+}
 .notification .icon {
   display: table-cell;
   vertical-align: top;
