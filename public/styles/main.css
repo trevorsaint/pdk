@@ -2469,7 +2469,7 @@ HTML Usage
 }
 .action-bar-title {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
 }
 .action-bar-start {
   border: 1px solid #dee0e2;
@@ -2622,6 +2622,11 @@ OR
   .pagination-numbers li {
     display: inline-block;
   }
+  .pagination-numbers li.is-active a {
+    color: #0b0c0c;
+    cursor: default;
+    pointer-events: none;
+  }
   .pagination-numbers a {
     display: block;
     padding: 3px 10px;
@@ -2698,25 +2703,25 @@ OR
 }
 
 /*
-  
+
 HTML Usage
-  
+
 <ul class="pagination">
-        
+
   <li class="pagination-prev">
     <a href="#" rel="prev" title="Navigate to previous part">
       <span class="pagination-label">Previous</span>
       <span class="pagination-title">Overview</span>
     </a>
   </li>
-  
+
   <li class="pagination-next">
     <a href="#" rel="next" title="Navigate to next part">
       <span class="pagination-label">Next</span>
       <span class="pagination-title">Give away business property or assets</span>
     </a>
   </li>
-  
+
 </ul>
 
 */
