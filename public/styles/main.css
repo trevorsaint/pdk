@@ -2823,11 +2823,14 @@ HTML Usage
   }
 }
 .notification-message {
-  color: white;
+  color: #fff;
   display: table-cell;
 }
 .notification-message p {
   margin: 0;
+}
+.notification-message a {
+  color: #fff;
 }
 .notification .icon {
   display: table-cell;
@@ -2853,25 +2856,20 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
-  
-<div class="notification notification-confirmation">
-  
+
+<div class="notification notification-confirmation" role="alert">
+  <i class="icon icon-tick-white" role="presentation" aria-hidden="true"></i>
   <div class="notification-message">
-    <p class="bold-small">Accepted case management information</p>
+    <p class="bold-medium">Accepted case management information</p>
   </div>
-  
 </div>
 
-<div class="notification notification-confirmation">
-  
-  <i class="icon icon-tick-white"></i>
-  
+<div class="notification notification-confirmation" role="alert">
   <div class="notification-message">
-    <p class="bold-small">Accepted case management information</p>
+    <p class="bold-medium">Accepted case management information</p>
   </div>
-  
 </div>
 
 */
