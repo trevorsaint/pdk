@@ -2135,11 +2135,8 @@ button::-moz-focus-inner {
 
 .list-inline li {
   display: inline-block;
-  margin-right: 20px;
-}
-.list-file {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .related-links {
@@ -3525,6 +3522,31 @@ HTML Usage
   <input class="form-control" type="search" id="search" name="search" value="BGV"><button class="form-search-button" type="submit">Search</button>
   <p class="form-search-clear"><a href="#">Clear search</a></p>
 </div>
+
+*/
+.case-marker {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+  text-transform: none;
+  background-color: #b10e1e;
+  color: #fff;
+  display: inline-block;
+  padding: 0.3125em 0.625em;
+}
+@media (min-width: 641px) {
+  .case-marker {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/*
+
+HTML Usage
+
+<span class="case-marker">Domestic violence</span>
 
 */
 .collapsibles [aria-hidden='true'] {
