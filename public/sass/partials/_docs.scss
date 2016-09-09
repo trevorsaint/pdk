@@ -32,6 +32,21 @@ $module: 'example';
 
   }
 
+  &-grid p {
+    width: 100%;
+    background: file-url('grid.png') 0 0 repeat;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 30px;
+
+    @include media(tablet) {
+      height: 60px;
+    }
+
+    overflow: hidden;
+    text-indent: -999em;
+  }
+
 }
 
 $module: 'highlight';

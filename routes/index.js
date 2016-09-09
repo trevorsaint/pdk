@@ -13,11 +13,21 @@ bind: function(app) {
       res.render('index', {
         docTitle: 'Platform Development Kit',
         pageTitle: 'Platform Development Kit',
-        pageLead: 'Extends the <abbr title="Government Digital Services">GDS</abbr> GOV.UK packages for developing citizen and business facing services as a platform.',
+        pageLead: 'Use white space to create a visual hierarchy on the page.',
         phaseBanner: true,
         isHome: true,
         usePrettify: false,
         breadcrumb: false
+      });
+    });
+
+    app.get('/layout', function (req, res) {
+      res.render('layout', {
+        docTitle: 'Layout',
+        pageTitle: 'Layout',
+        pageLead: 'For GOV.UK domains, always use the <abbr title="Government Digital Services">GDS</abbr> Transport Website font in Light and Bold.',
+        phaseBanner: true,
+        usePrettify: true
       });
     });
 
