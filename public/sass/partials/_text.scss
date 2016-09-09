@@ -1,0 +1,21 @@
+// Text
+// ==========================================================================
+
+$module: 'text';
+
+.#{$module} {
+
+  &-error {
+    color: $red;
+    font-weight: 700;
+  }
+
+}
+
+/*
+
+HTML Usage
+
+<span class="text-error">Rejected</span>
+
+*/

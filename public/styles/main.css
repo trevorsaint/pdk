@@ -1873,11 +1873,11 @@ input[type=number] {
     display: revert;
   }
 }
-.persist-info:before, .pagination:before, .collapsibles-header:before, .persist-info:after, .pagination:after, .collapsibles-header:after {
+.persist-info:before, .pagination:before, .document-small:before, .collapsibles-header:before, .persist-info:after, .pagination:after, .document-small:after, .collapsibles-header:after {
   content: '';
   display: table;
 }
-.persist-info:after, .pagination:after, .collapsibles-header:after {
+.persist-info:after, .pagination:after, .document-small:after, .collapsibles-header:after {
   clear: both;
 }
 
@@ -3183,61 +3183,6 @@ HTML Usage
 <i class="icon icon-tick-white" role="presentation" aria-hidden="true"></i>
 
 */
-.description dt {
-  font-weight: bold;
-}
-.description dd {
-  margin-bottom: 0.52632em;
-}
-@media (min-width: 641px) {
-  .description-inline dt {
-    float: left;
-    width: 40%;
-  }
-  .description-inline dd {
-    overflow: hidden;
-    padding-left: 20px;
-  }
-}
-.description-small dt {
-  font-family: "nta", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.14286;
-  font-weight: 400;
-  text-transform: none;
-}
-@media (min-width: 641px) {
-  .description-small dt {
-    font-size: 16px;
-    line-height: 1.25;
-  }
-}
-
-/*
-  
-HTML Usage
-  
-<dl class="description">
-  <dt>Heading</dt>
-  <dd>Content</dd>
-</dl>
-
-<dl class="description description-inline">
-  <dt>Heading</dt>
-  <dd>Content</dd>
-</dl>
-
-<dl class="description description-tint">
-  <dt>Heading</dt>
-  <dd>Content</dd>
-</dl>
-
-<dl class="description description-small">
-  <dt>Heading</dt>
-  <dd>Content</dd>
-</dl>
-
-*/
 .personal-details [class*=heading] {
   margin-top: 0;
 }
@@ -3592,6 +3537,111 @@ HTML Usage
 /*
 
 HTML Usage
+
+*/
+.meta {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.meta dt {
+  font-weight: 700;
+  width: auto;
+}
+@media (min-width: 641px) {
+  .meta dt {
+    float: left;
+  }
+  .meta dd {
+    overflow: hidden;
+  }
+}
+.meta-large dt {
+  margin-bottom: 0.26316em;
+}
+.meta-large dd {
+  margin-bottom: 1.05263em;
+}
+.meta-large dd .document {
+  margin-top: 10px;
+}
+@media (min-width: 641px) {
+  .meta-large dt {
+    margin-bottom: 1.05263em;
+    min-width: 160px;
+    padding-right: 0.52632em;
+  }
+  .meta-large dd {
+    margin-bottom: 1.05263em;
+  }
+  .meta-large dd .document:first-child {
+    margin-top: 0;
+  }
+}
+.meta-small {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 400;
+  text-transform: none;
+}
+@media (min-width: 641px) {
+  .meta-small {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.meta-small dd {
+  margin-bottom: 0.625em;
+}
+@media (min-width: 641px) {
+  .meta-small dt {
+    margin-bottom: 0.625em;
+    min-width: 10em;
+    padding-right: 0.625em;
+  }
+}
+
+/*
+
+HTML Usage
+
+<dl class="meta meta-small">
+  <dt>Age</dt>
+  <dd>21</dd>
+  <dt>Date of birth</dt>
+  <dd><time datetime="1985-06-08">8 June 1985</time></dd>
+  <dt>Nationality</dt>
+  <dd>British <br> Self&ndash;defined as White British</dd>
+  <dt>Address</dt>
+  <dd>14 Tottenham Court Road, Fitzrovia, <br> London W1T 1JY</dd>
+  <dt>Email</dt>
+  <dd>peter.james@gmail.com</dd>
+  <dt>National Insurance</dt>
+  <dd>PC 12 34 56 78</dd>
+</dl>
+
+OR
+
+<dl class="meta meta-large">
+  <dt>Case status</dt>
+  <dd>Awaiting plea</dd>
+  <dt>Prosecutor</dt>
+  <dd>Transport for London</dd>
+  <dt>Notice served</dt>
+  <dd><time datetime="2016-02-02">2 February 2016</time></dd>
+</dl>
+
+*/
+.text-error {
+  color: #b10e1e;
+  font-weight: 700;
+}
+
+/*
+
+HTML Usage
+
+<span class="text-error">Rejected</span>
 
 */
 @media (min-width: 769px) {

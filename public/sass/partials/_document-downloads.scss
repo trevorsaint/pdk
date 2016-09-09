@@ -57,6 +57,7 @@ $module: 'document';
 
   // alternative
   &-small {
+    @extend %clearfix;
 
     .#{$module}-title {
       @include core-16;
