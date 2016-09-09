@@ -7,7 +7,7 @@ $module: 'persist-info';
   @include core-16;
   @extend %clearfix;
   background-color: $govuk-blue;
-  color: white;
+  color: $white;
   padding: em(5, 16);
 
   a {

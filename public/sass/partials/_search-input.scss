@@ -5,28 +5,28 @@ $module: 'form-search';
 
 .#{$module} {
   position: relative;
-  
+
   + .panel {
     margin-top: $gutter-half;
     margin-bottom: 0;
   }
-  
+
   .form-control {
     @include box-sizing(border-box);
     display: inline-block;
     vertical-align: middle;
     width: calc(100% - 32px);
-    
+
     @include media(tablet) {
-      width: calc(50% - 37px);  
+      width: calc(50% - 37px);
     }
-    
+
     &:focus {
       position: relative;
     }
-    
+
   }
-  
+
   &-button {
     @include box-sizing(border-box);
     background-color: $govuk-blue;
@@ -37,10 +37,10 @@ $module: 'form-search';
     height: 32px;
     overflow: hidden;
     padding: 4px;
-    text-indent: -9999px;
+    text-indent: -999px;
     vertical-align: middle;
     width: 32px;
-    
+
     &:focus,
     &:hover {
       background-color: darken($govuk-blue, 5%); //#004F8C
@@ -51,32 +51,32 @@ $module: 'form-search';
       background-image: url('../images/icon-search-white-2x.png');
       background-size: 100%;
     }
-    
+
     @include media(tablet) {
       height: 37px;
       width: 37px;
     }
-    
+
     &:focus {
       position: relative;
     }
-    
+
   }
-   
+
 }
 
 .error {
-  
+
   .#{$module}-button {
     border-width: 4px;
     height: 41px;
     width: 41px;
   }
-  
+
 }
 
 /*
-  
+
 HTML Usage
 
 <div class="form-search">

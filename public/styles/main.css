@@ -2205,7 +2205,7 @@ HTML Usage
   font-weight: 400;
   text-transform: none;
   background-color: #005ea5;
-  color: white;
+  color: #fff;
   padding: 0.3125em;
 }
 @media (min-width: 641px) {
@@ -2306,7 +2306,7 @@ HTML Usage
 }
 .progress-list .is-active {
   border-bottom: 3px solid #0b0c0c;
-  color: black;
+  color: #0b0c0c;
 }
 .progress-list-status {
   font-family: "nta", Arial, sans-serif;
@@ -2326,25 +2326,25 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
-  
+
 <ol class="progress-list">
-        
+
   <li>Step one
     <span class="progress-list-status"><i class="icon icon-complete"></i> complete</span>
   </li>
-  
+
   <li>Step two
     <span class="progress-list-status"><i class="icon icon-complete"></i> complete</span>
   </li>
-  
+
   <li class="is-active">Step three
     <span class="progress-list-status">incomplete</span>
   </li>
-  
+
   <li>Step four</li>
-  
+
 </ol>
 
 */
@@ -2356,7 +2356,7 @@ HTML Usage
   text-transform: none;
   background-color: #6f777b;
   clear: both;
-  color: white;
+  color: #fff;
   display: inline-block;
   padding: 15px;
   vertical-align: top;
@@ -2369,9 +2369,9 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
-  
+
 <div class="digit-box">
   <span class="digit-box-number">07700900753</span>
 </div>
@@ -2588,8 +2588,8 @@ OR
 
 */
 .pagination {
-  position: relative;
   min-height: 37px;
+  position: relative;
   width: 100%;
 }
 .pagination-numbers {
@@ -2598,8 +2598,8 @@ OR
 @media (min-width: 769px) {
   .pagination-numbers {
     display: block;
-    transform: translateY(-50%) translateX(-50%);
     position: absolute;
+    transform: translateY(-50%) translateX(-50%);
     left: 50%;
     top: 50%;
   }
@@ -2620,9 +2620,9 @@ OR
 .pagination-prev a, .pagination-next a {
   display: inline-block;
   overflow: hidden;
-  vertical-align: middle;
   padding: 9px;
   text-decoration: none;
+  vertical-align: middle;
 }
 .pagination-label {
   display: block;
@@ -2902,7 +2902,7 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
 
 */
@@ -2945,10 +2945,10 @@ HTML Usage
 }
 .menu-title {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
 }
 .menu-text {
-  color: black;
+  color: #0b0c0c;
 }
 .menu li {
   padding: 15px;
@@ -2956,16 +2956,16 @@ HTML Usage
 }
 .menu li.is-active {
   background-color: #005ea5;
-  color: white;
+  color: #fff;
   position: relative;
   top: -1px;
 }
 .menu li.is-active .menu-text {
-  color: white;
+  color: #fff;
 }
 
 /*
-  
+
 HTML Usage
 
 */
@@ -3355,14 +3355,14 @@ HTML Usage
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
   background-color: #dee0e2;
   border: 1px solid transparent;
   cursor: pointer;
-  font-size: inherit;
   display: block;
+  float: left;
+  font-size: inherit;
+  margin-right: 0.52632em;
+  margin-bottom: 0.52632em;
   padding: 0.52632em 0.78947em;
   text-decoration: none;
 }
@@ -3370,7 +3370,7 @@ HTML Usage
   border-color: #0b0c0c;
 }
 .filters-button:focus {
-  background-color: white;
+  background-color: #fff;
   outline: 3px solid #ffbf47;
 }
 .filters-button::-moz-focus-inner {
@@ -3389,7 +3389,7 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
 
 */
@@ -3428,7 +3428,7 @@ HTML Usage
   height: 32px;
   overflow: hidden;
   padding: 4px;
-  text-indent: -9999px;
+  text-indent: -999px;
   vertical-align: middle;
   width: 32px;
 }
@@ -3459,7 +3459,7 @@ HTML Usage
 }
 
 /*
-  
+
 HTML Usage
 
 <div class="form-search">

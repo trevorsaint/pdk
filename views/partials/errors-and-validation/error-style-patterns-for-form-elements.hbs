@@ -1,73 +1,121 @@
   <section aria-labelledby="error-style-patterns-for-form-elements">
-  
+
     <h3 class="heading-medium" id="error-style-patterns-for-form-elements">Error style patterns for form elements</h3>
-    
+
     <p>Text input with error</p>
-    
+
     <div class="example">
-      
+
       <form class="form">
-        
+
         <div class="error">
-          
+
           <label for="ni-number">
             <span class="form-label-bold">National Insurance number</span>
             <span class="form-hint">Find this on your payslip, P60 or tax return. For example, VO 12 34 56 D.</span>
             <span class="error-message" id="error-message-ni-number">Provide this information</span>
           </label>
-          
+
           <input class="form-control" id="ni-number" type="text" aria-labelledby="error-message-ni-number" aria-invalid="true">
-          
+
         </div>
-        
+
       </form>
-      
+
     </div>
-    
+
   <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
   &#x3C;div class=&#x22;form-group error&#x22;&#x3E;
-            
+
     &#x3C;label for=&#x22;ni-number&#x22;&#x3E;
       &#x3C;span class=&#x22;form-label-bold&#x22;&#x3E;National Insurance number&#x3C;/span&#x3E;
       &#x3C;span class=&#x22;form-hint&#x22;&#x3E;Find this on your payslip, P60 or tax return. For example...&#x3C;/span&#x3E;
       &#x3C;span class=&#x22;error-message&#x22; id=&#x22;error-message-ni-number&#x22;&#x3E;Provide this information&#x3C;/span&#x3E;
     &#x3C;/label&#x3E;
-    
+
     &#x3C;input class=&#x22;form-control&#x22; aria-labelledby=&#x22;error-message-ni-number&#x22; aria-invalid=&#x22;true&#x22;&#x3E;
-    
+
   &#x3C;/div&#x3E;
   </code></pre></div>
-  
+
   <p>Select box with error</p>
-  
+
   <div class="example">
 
+    <form class="form">
+
+      <div class="error">
+        <label for="legal-status">
+          <span class="form-label-bold">Legal status</span>
+          <span class="error-message" id="error-message-legal-status">Provide this information</span>
+        </label>
+        <select class="form-control" id="legal-status" aria-describedby="error-message-legal-status" aria-invalid="true">
+          <option>Charitable Interest Organisation</option>
+          <option>Community Interest Company</option>
+          <option>Government (Central)</option>
+          <option>Government Limited Liability Partnership</option>
+        </select>
+      </div>
+
   </div>
-  
+
   <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
 
   </code></pre></div>
-  
+
   <p>Date input with error</p>
-  
+
   <div class="example">
 
+    <div class="error">
+
+      <fieldset>
+
+        <legend>
+          <span class="form-label-bold">What is your date of birth?</span>
+          <span class="form-hint" id="dob-hint">For example, 31 3 1980</span>
+          <span class="error-message" id="error-message-dob">Provide this information</span>
+        </legend>
+
+        <div class="form-date">
+
+          <div class="form-group form-group-day">
+            <label class="form-label" for="dob-day">Day</label>
+            <input class="form-control" type="number" id="dob-day" aria-describedby="error-message-dob" aria-invalid="true">
+          </div>
+
+          <div class="form-group form-group-month">
+            <label class="form-label" for="dob-month">Month</label>
+            <input class="form-control" type="number" id="dob-month">
+          </div>
+
+          <div class="form-group form-group-year">
+            <label class="form-label" for="dob-year">Year</label>
+            <input class="form-control" type="number" id="dob-year">
+          </div>
+
+        </div>
+
+      </fieldset>
+
+    </div>
+
   </div>
-  
+
   <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
 
   </code></pre></div>
-  
+
   <p>Textarea with error</p>
-  
+
   <div class="example">
 
   </div>
-  
+
   <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
 
   </code></pre></div>
-    
+
   </section>
-  
+
   <p class="font-xsmall"><a href="#toc">Back to the top</a></p>

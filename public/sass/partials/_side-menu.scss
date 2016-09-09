@@ -4,51 +4,51 @@
 $module: 'menu';
 
 .#{$module} {
-  
+
   &-heading {
     border-bottom: 1px solid $grey-2;
     padding: $gutter-half;
   }
-  
+
   a {
     display: block;
     text-decoration: none;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   &-title {
     display: block;
-    font-weight: bold;
+    font-weight: 700;
   }
-  
+
   &-text {
-    color: black;
+    color: $black;
   }
-  
+
   li {
     padding: $gutter-half;
     color: $grey-1;
-    
+
     &.is-active {
       background-color: $govuk-blue;
-      color: white;
+      color: $white;
       position: relative; top: -1px;
-      
+
       .#{$module}-text {
-        color: white;
+        color: $white;
       }
-              
+
     }
-    
+
   }
-  
+
 }
 
 /*
-  
+
 HTML Usage
 
 */
