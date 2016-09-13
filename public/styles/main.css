@@ -631,20 +631,20 @@ p {
   color: #6f777b;
 }
 
-.link, .global-navigation-toggle {
+.link, .global-nav-toggle {
   color: #005ea5;
   text-decoration: underline;
 }
 
-.link:visited, .global-navigation-toggle:visited {
+.link:visited, .global-nav-toggle:visited {
   color: #4c2c92;
 }
 
-.link:hover, .global-navigation-toggle:hover {
+.link:hover, .global-nav-toggle:hover {
   color: #2b8cc4;
 }
 
-.link:active, .global-navigation-toggle:active {
+.link:active, .global-nav-toggle:active {
   color: #005ea5;
 }
 
@@ -1873,11 +1873,11 @@ input[type=number] {
     display: revert;
   }
 }
-.persist-info:before, .pagination:before, .document-small:before, .global-navigation-list:before, .collapsibles-header:before, .persist-info:after, .pagination:after, .document-small:after, .global-navigation-list:after, .collapsibles-header:after {
+.persist-info:before, .pagination:before, .document-small:before, .global-nav:before, .global-nav-list:before, .collapsibles-header:before, .persist-info:after, .pagination:after, .document-small:after, .global-nav:after, .global-nav-list:after, .collapsibles-header:after {
   content: '';
   display: table;
 }
-.persist-info:after, .pagination:after, .document-small:after, .global-navigation-list:after, .collapsibles-header:after {
+.persist-info:after, .pagination:after, .document-small:after, .global-nav:after, .global-nav-list:after, .collapsibles-header:after {
   clear: both;
 }
 
@@ -2968,85 +2968,59 @@ HTML Usage
 HTML Usage
 
 */
-.global-navigation {
+.global-nav {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.14286;
   font-weight: 400;
   text-transform: none;
-  clear: both;
 }
 @media (min-width: 641px) {
-  .global-navigation {
+  .global-nav {
     font-size: 16px;
     line-height: 1.25;
   }
 }
-.global-navigation-toggle {
+.global-nav-toggle {
   display: none;
 }
-.global-navigation-list {
+.global-nav-menu {
+  clear: both;
+}
+.global-nav-list {
   list-style: none;
 }
-.global-navigation-list li {
+.global-nav-list li.is-active {
   font-weight: 700;
 }
-.global-navigation-list li.is-active {
-  border-bottom: 5px solid #0b0c0c;
-}
-.global-navigation-list li.is-active a {
+.global-nav-list li.is-active a {
   color: #0b0c0c;
+  pointer-events: none;
 }
-.global-navigation-list li a {
+.global-nav-list li a {
   overflow: hidden;
   text-decoration: none;
 }
 @media (max-width: 640px) {
-  .global-navigation-list li {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .global-navigation-list a {
+  .global-nav-list a {
     display: block;
-    padding: 10px;
+    padding: 10px 0;
   }
-  .global-navigation-toggle {
-    background-color: transparent;
-    border: 0;
-    clear: both;
-    cursor: pointer;
-    display: block;
-    float: right;
-    font-size: inherit;
-    padding: 10px;
-    text-decoration: none;
-    margin-right: -10px;
-  }
-  .global-navigation-toggle:after {
-    font-size: 10px;
-    padding-left: 0.26316em;
-    vertical-align: middle;
-  }
-  .global-navigation-toggle[aria-expanded="false"]:after {
-    content: '▼';
-  }
-  .global-navigation-toggle[aria-expanded='true']:after {
-    content: '▲';
-  }
-  .global-navigation-list + ul {
+  .global-nav-list + ul {
     border-top: 1px solid #bfc1c3;
   }
 }
 @media (min-width: 641px) {
-  .global-navigation-list li {
+  .global-nav-list li {
     float: left;
-    padding: 5px 0;
-    margin: 5px 20px 5px 0;
+    margin-right: 20px;
+    padding: 10px 0;
   }
-  .global-navigation-list li.is-active {
+  .global-nav-list li.is-active {
+    cursor: default;
     padding-bottom: 5px;
   }
-  .global-navigation-list li.is-active:after {
+  .global-nav-list li.is-active:after {
     background-color: #0b0c0c;
     content: '';
     height: 5px;
@@ -3054,37 +3028,92 @@ HTML Usage
     bottom: 0;
     left: 0;
   }
-  .global-navigation-list + ul {
+  .global-nav-list + ul {
     border-top: 1px solid #bfc1c3;
     clear: both;
   }
 }
 @media (min-width: 769px) {
-  .global-navigation-list {
+  .global-nav-list {
     float: left;
   }
-  .global-navigation-list + ul {
+  .global-nav-list li.is-active {
+    position: relative;
+  }
+  .global-nav-list li.is-active:after {
+    background-color: #0b0c0c;
+    content: '';
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+  }
+  .global-nav-list + ul {
     border-top: 0;
+    border-left: 1px solid #bfc1c3;
     clear: none;
   }
-  .global-navigation-list + ul li {
+  .global-nav-list + ul li {
     margin-left: 20px;
     margin-right: 0;
   }
-  .global-navigation-list + ul li:before {
-    background-color: #bfc1c3;
-    content: '';
-    height: 100%;
-    width: 1px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+}
+
+@media (max-width: 640px) {
+  .js-enabled .global-nav-menu {
+    display: none;
+  }
+  .js-enabled .global-nav-menu[aria-expanded="true"] {
+    display: block;
+  }
+  .js-enabled .global-nav-toggle {
+    border: 0;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: inherit;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  .js-enabled .global-nav-toggle:after {
+    font-size: 10px;
+    padding-left: 0.26316em;
+    vertical-align: middle;
+  }
+  .js-enabled .global-nav-toggle[aria-expanded="false"]:after {
+    content: '▼';
+  }
+  .js-enabled .global-nav-toggle[aria-expanded='true']:after {
+    content: '▲';
   }
 }
 
 /*
 
 HTML Usage
+
+<div class="global-navigation">
+
+  <a href="#" class="global-navigation-toggle" aria-expanded="false" aria-controls="global-navigation">Menu</a>
+
+  <nav class="global-navigation-menu" id="global-navigation" role="navigation" aria-label="Global Navigation">
+
+    <h3 class="visuallyhidden">Global navigation</h3>
+
+    <ul class="global-navigation-list">
+      <li><a href="#">Case at a glance</a></li>
+      <li class="is-active"><a href="#" tabindex="-1">Case material</a></li>
+    </ul>
+
+    <ul class="global-navigation-list">
+      <li><a href="#">Analysis and decisions</a></li>
+      <li><a href="#">Action plan</a></li>
+      <li><a href="#">Preview and send</a></li>
+    </ul>
+
+  </nav>
+
+</div>
 
 */
 .tabs [role='tabpanel'][aria-hidden='true'] {

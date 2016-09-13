@@ -1,23 +1,31 @@
-  <section aria-labelledby="global-navigation">
+  <section aria-labelledby="navigation">
 
-    <h3 class="heading-medium" id="global-navigation">Global Navigation</h3>
+    <h3 class="heading-medium" id="navigation">Global Navigation</h3>
+
+    <p class="text">We have three states for navigation when viewed on mobile, tablet and desktop devices.<p>
+
+    <div class="panel panel-border-wide">
+      <p><abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes are being switched using JavaScript (mobile view).</p>
+    </div>
 
     <div class="example">
 
-      <div class="global-navigation">
+      <div class="global-nav">
 
-        <a href="#" class="global-navigation-toggle" aria-expanded="false" aria-controls="global-navigation">Menu</a>
+        <a href="#" class="global-nav-toggle" aria-expanded="false" aria-controls="global-nav">
+          Menu
+        </a>
 
-        <nav class="global-navigation" id="global-navigation" role="navigation" aria-label="Global Navigation" aria-expanded="true">
+        <nav class="global-nav-menu" id="global-nav" role="navigation" aria-label="Global nav">
 
-          <h3 class="visuallyhidden">Global navigation</h3>
+          <h3 class="visuallyhidden">Global nav</h3>
 
-          <ul class="global-navigation-list">
-            <li class="is-active">Case at a glance</li>
-            <li><a href="#">Case material</a></li>
+          <ul class="global-nav-list">
+            <li><a href="#">Case at a glance</a></li>
+            <li class="is-active"><a href="#" tabindex="-1">Case material</a></li>
           </ul>
 
-          <ul class="global-navigation-list">
+          <ul class="global-nav-list">
             <li><a href="#">Analysis and decisions</a></li>
             <li><a href="#">Action plan</a></li>
             <li><a href="#">Preview and send</a></li>
@@ -30,7 +38,30 @@
     </div>
 
     <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
+    &#x3C;div class=&#x22;global-nav&#x22;&#x3E;
 
+      &#x3C;a href=&#x22;#&#x22; class=&#x22;global-nav-toggle&#x22; aria-expanded=&#x22;false&#x22; aria-controls=&#x22;global-nav&#x22;&#x3E;
+        Menu
+      &#x3C;/a&#x3E;
+
+      &#x3C;nav class=&#x22;global-nav-menu&#x22; id=&#x22;global-nav&#x22; role=&#x22;navigation&#x22; aria-label=&#x22;Global nav&#x22;&#x3E;
+
+        &#x3C;h3 class=&#x22;visuallyhidden&#x22;&#x3E;Global nav&#x3C;/h3&#x3E;
+
+        &#x3C;ul class=&#x22;global-nav-list&#x22;&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Case at a glance&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li class=&#x22;is-active&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22; tabindex=&#x22;-1&#x22;&#x3E;Case material&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+
+        &#x3C;ul class=&#x22;global-nav-list&#x22;&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Analysis and decisions&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Action plan&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+          &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Preview and send&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;/ul&#x3E;
+
+      &#x3C;/nav&#x3E;
+
+    &#x3C;/div&#x3E;
     </code></pre></div>
 
   </section>
