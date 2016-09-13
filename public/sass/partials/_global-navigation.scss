@@ -1,76 +1,36 @@
 // Global navigation
 // ==========================================================================
 
-$module: 'navigation';
+$module: 'global-navigation';
 
 .#{$module} {
+  @include core-16;
+  clear: both;
 
-  .is-active {
-    display: inline-block;
-    position: relative;
-
-    a:link {
-      color: $black;
-      cursor: default;
-
-      &:focus {
-        background-color: transparent;
-        outline: none;
-      }
-
-    }
-
-    &:after {
-      background-color: $black;
-      content: '';
-      height: 5px;
-      position: absolute; bottom: -2px; left: 0;
-      width: 100%;
-      z-index: 2;
-    }
-
+  &-toggle {
+    @extend .link;
+    display: none;
   }
 
   &-list {
+    @extend %clearfix;
     list-style: none;
 
-    &-item {
+    li {
+      font-weight: 700;
 
-      a:link {
-        font-weight: 700;
-        text-decoration: none;
+      &.is-active {
+        border-bottom: 5px solid $black;
+
+        a {
+          color: $black;
+        }
+
       }
-
-    }
-
-  }
-
-  &-list {
-    position: relative;
-    z-index: 2;
-
-    &-item {
 
       a {
-        display: inline-block;
-        margin: 10px 0;
         overflow: hidden;
-        vertical-align: top;
-      }
-
-    }
-
-    &-pre-charge {
-      position: relative;
-      z-index: 1;
-
-      &:before {
-        background-color: $border-colour;
-        content: '';
-        display: block;
-        height: 2px;
-        position: relative; left: 0; top: 0;
-        width: 100%;
+        text-decoration: none;
       }
 
     }
@@ -82,9 +42,122 @@ $module: 'navigation';
 
     &-list {
 
+      li {
+        margin-left: -10px; // alignment tweak
+        margin-right: -10px;
+      }
+
+      a {
+        display: block;
+        padding: 10px;
+      }
+
+    }
+
+    &-toggle {
+      background-color: transparent;
+      border: 0;
+      clear: both;
+      cursor: pointer;
+      display: block;
+      float: right;
+      font-size: inherit;
+      padding: 10px;
+      text-decoration: none;
+      margin-right: -10px; // alignment tweak
+
+      &:after {
+        font-size: 10px;
+        padding-left: em(5);
+        vertical-align: middle;
+      }
+
+      &[aria-expanded="false"]:after {
+        content: '▼';
+      }
+
+      &[aria-expanded='true']:after {
+        content: '▲';
+      }
+
+    }
+
+    &-list {
+
+      + ul { // targets second ul for pre-charge review
+        border-top: 1px solid $border-colour;
+      }
+
     }
 
   }
+
+  // tablet
+  @include media(tablet) {
+
+    &-list {
+
+      li {
+        float: left;
+        padding: 5px 0;
+        margin: 5px 20px 5px 0;
+
+        &.is-active {
+          padding-bottom: 5px;
+
+          &:after {
+            background-color: $black;
+            content: '';
+            height: 5px;
+            position: absolute;
+            bottom: 0; left: 0;
+          }
+
+        }
+
+      }
+
+      + ul { // targets second ul for pre-charge review
+        border-top: 1px solid $border-colour;
+        clear: both;
+      }
+
+    }
+
+  }
+
+
+  // desktop
+  @include media(desktop) {
+
+    &-list {
+      float: left;
+
+      + ul {
+        border-top: 0;
+        clear: none;
+
+        li {
+          margin-left: 20px;
+          margin-right: 0;
+
+          &:before{
+            background-color: $border-colour;
+            content: '';
+            height: 100%;
+            width: 1px;
+            position: absolute;
+            bottom: 0; left: 0;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
 
 }
 
