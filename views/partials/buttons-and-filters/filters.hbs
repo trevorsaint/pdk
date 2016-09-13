@@ -1,32 +1,32 @@
   <section aria-labelledby="filter-results">
-  
+
     <h3 class="heading-medium" id="filter-results">Filter results</h3>
-    
+
     <div class="panel panel-border-wide">
       <p><abbr title="Accessible Rich Internet Applications">ARIA</abbr> attributes are being switched using JavaScript.</p>
     </div>
-    
+
     <div class="example">
-      
+
       <div class="filters">
-      
+
         <div class="filters-menu" role="toolbar" aria-label="Filter options" aria-controls="filters-content">
           <button class="filters-button is-selected" type="button" aria-pressed="true" data-sort="all">All users</button>
           <button class="filters-button" type="button" aria-pressed="false" data-sort="pending">Pending users</button>
           <button class="filters-button" type="button" aria-pressed="false" data-sort="administrator">Administrators only</button>
         </div>
-        
+
         <div id="filters-content">
-        
+
           <table class="table table-personal-details">
-            
+
             <thead>
               <tr>
                 <th scope="col">Name</th>
                 <th scope="col">Email address</th>
               </tr>
             </thead>
-            
+
             <tbody>
               <tr data-filter="administrator">
                 <td><a href="#">CHANT, John</a></td>
@@ -45,80 +45,80 @@
                 <td>john.ocarrol@gmail.com</td>
               </tr>
             </tbody>
-            
+
           </table>
-        
+
         </div>
-      
+
       </div>
 
     </div>
-  
+
   </section>
-  
+
   <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
-  &#x3C;div class=&#x22;filters&#x22;&#x3E;
-  
-    &#x3C;div class=&#x22;filters-menu&#x22; 
-         role=&#x22;toolbar&#x22; 
-         aria-label=&#x22;Filter options&#x22; 
-         aria-controls=&#x22;filters-content&#x22;&#x3E;
-           
-      &#x3C;button 
-         class=&#x22;filters-button is-selected&#x22; 
-         type=&#x22;button&#x22; 
-         aria-pressed=&#x22;true&#x22; 
-         data-sort=&#x22;all&#x22;&#x3E;All users&#x3C;/button&#x3E;
-      
-      &#x3C;button 
-         class=&#x22;filters-button&#x22; 
-         type=&#x22;button&#x22; 
-         aria-pressed=&#x22;false&#x22; 
-         data-sort=&#x22;pending&#x22;&#x3E;Pending users&#x3C;/button&#x3E;
-      
-      &#x3C;button 
-         class=&#x22;filters-button&#x22; 
-         type=&#x22;button&#x22; 
-         aria-pressed=&#x22;false&#x22; 
-         data-sort=&#x22;administrator&#x22;&#x3E;Administrators only&#x3C;/button&#x3E;
-      
-    &#x3C;/div&#x3E;
-    
-    &#x3C;div id=&#x22;filters-content&#x22;&#x3E;
-    
-      &#x3C;table class=&#x22;table&#x22;&#x3E;
-        
-        &#x3C;thead&#x3E;
-          &#x3C;tr&#x3E;
-            &#x3C;th scope=&#x22;col&#x22;&#x3E;Name&#x3C;/th&#x3E;
-            &#x3C;th scope=&#x22;col&#x22;&#x3E;Email address&#x3C;/th&#x3E;
-          &#x3C;/tr&#x3E;
-        &#x3C;/thead&#x3E;
-        
-        &#x3C;tbody&#x3E;
-          &#x3C;tr data-filter=&#x22;administrator&#x22;&#x3E;
-            &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;CHANT, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
-            &#x3C;td&#x3E;john.chant@gmail.com&#x3C;/td&#x3E;
-          &#x3C;/tr&#x3E;
-          &#x3C;tr data-filter=&#x22;pending&#x22;&#x3E;
-            &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;FRANCIS, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
-            &#x3C;td&#x3E;john.francis@gmail.com&#x3C;/td&#x3E;
-          &#x3C;/tr&#x3E;
-          &#x3C;tr data-filter=&#x22;pending&#x22;&#x3E;
-            &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;SMITH, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
-            &#x3C;td&#x3E;john.smith@gmail.com&#x3C;/td&#x3E;
-          &#x3C;/tr&#x3E;
-          &#x3C;tr data-filter=&#x22;administrator&#x22;&#x3E;
-            &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;O&#x27;CARROL, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
-            &#x3C;td&#x3E;john.ocarrol@gmail.com&#x3C;/td&#x3E;
-          &#x3C;/tr&#x3E;
-        &#x3C;/tbody&#x3E;
-        
-      &#x3C;/table&#x3E;
-    
-    &#x3C;/div&#x3E;
-  
+&#x3C;div class=&#x22;filters&#x22;&#x3E;
+
+  &#x3C;div class=&#x22;filters-menu&#x22;
+       role=&#x22;toolbar&#x22;
+       aria-label=&#x22;Filter options&#x22;
+       aria-controls=&#x22;filters-content&#x22;&#x3E;
+
+    &#x3C;button
+       class=&#x22;filters-button is-selected&#x22;
+       type=&#x22;button&#x22;
+       aria-pressed=&#x22;true&#x22;
+       data-sort=&#x22;all&#x22;&#x3E;All users&#x3C;/button&#x3E;
+
+    &#x3C;button
+       class=&#x22;filters-button&#x22;
+       type=&#x22;button&#x22;
+       aria-pressed=&#x22;false&#x22;
+       data-sort=&#x22;pending&#x22;&#x3E;Pending users&#x3C;/button&#x3E;
+
+    &#x3C;button
+       class=&#x22;filters-button&#x22;
+       type=&#x22;button&#x22;
+       aria-pressed=&#x22;false&#x22;
+       data-sort=&#x22;administrator&#x22;&#x3E;Administrators only&#x3C;/button&#x3E;
+
   &#x3C;/div&#x3E;
+
+  &#x3C;div id=&#x22;filters-content&#x22;&#x3E;
+
+    &#x3C;table class=&#x22;table&#x22;&#x3E;
+
+      &#x3C;thead&#x3E;
+        &#x3C;tr&#x3E;
+          &#x3C;th scope=&#x22;col&#x22;&#x3E;Name&#x3C;/th&#x3E;
+          &#x3C;th scope=&#x22;col&#x22;&#x3E;Email address&#x3C;/th&#x3E;
+        &#x3C;/tr&#x3E;
+      &#x3C;/thead&#x3E;
+
+      &#x3C;tbody&#x3E;
+        &#x3C;tr data-filter=&#x22;administrator&#x22;&#x3E;
+          &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;CHANT, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;john.chant@gmail.com&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+        &#x3C;tr data-filter=&#x22;pending&#x22;&#x3E;
+          &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;FRANCIS, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;john.francis@gmail.com&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+        &#x3C;tr data-filter=&#x22;pending&#x22;&#x3E;
+          &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;SMITH, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;john.smith@gmail.com&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+        &#x3C;tr data-filter=&#x22;administrator&#x22;&#x3E;
+          &#x3C;td&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;O&#x27;CARROL, John&#x3C;/a&#x3E;&#x3C;/td&#x3E;
+          &#x3C;td&#x3E;john.ocarrol@gmail.com&#x3C;/td&#x3E;
+        &#x3C;/tr&#x3E;
+      &#x3C;/tbody&#x3E;
+
+    &#x3C;/table&#x3E;
+
+  &#x3C;/div&#x3E;
+
+&#x3C;/div&#x3E;
   </code></pre></div>
-  
+
   <p class="font-xsmall"><a href="#toc">Back to the top</a></p>
