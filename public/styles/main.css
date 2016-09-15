@@ -1890,6 +1890,14 @@ CSS Usage
 }
 
 */
+b {
+  font-weight: 700;
+}
+
+.lead-in {
+  margin-bottom: 0;
+}
+
 .button-secondary {
   background-color: #dee0e2;
   position: relative;
@@ -2109,9 +2117,6 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
-.table {
-  margin-bottom: 1.05263em;
-}
 @media (min-width: 641px) {
   .table-personal-details th:first-child {
     width: 30%;
@@ -4131,12 +4136,4 @@ HTML Usage
 .swatch-wrapper b {
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.lead-in {
-  margin-bottom: 0;
-}
-
-b {
-  font-weight: bold;
 }

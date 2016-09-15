@@ -4,8 +4,8 @@
 $module: 'table';
 
 .#{$module} {
-  margin-bottom: em(20);
- 
+  //margin-bottom: em(20);
+
   // personal details modifier
  &-personal-details {
 
@@ -14,9 +14,9 @@ $module: 'table';
       th:first-child {
         width: 30%
       }
-    
+
     }
-    
+
   }
- 
+
 }
