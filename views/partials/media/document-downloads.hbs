@@ -2,17 +2,19 @@
 
     <h3 class="heading-medium" id="document-downloads">Document downloads</h3>
 
-    <div class="panel panel-border-wide text">
-      <p>I&rsquo;ve opted for a non CSS3 Box Shadow approach to ensure consistent look and feel across all browsers.</p>
-    </div>
+    <p>Document download with thumbnail.</p>
 
-    <p>Document download with thumbnail</p>
+    <div class="panel panel-border-wide text">
+      <p>Image size needs to be 280px height by 198px width. This caters for retina screens.</p>
+    </div>
 
     <div class="example">
 
       <!-- document download -->
       <div class="document">
-        <div class="document-thumbnail"></div>
+        <div class="document-thumbnail">
+          <img src="public/images/document-thumbnail.jpg" alt="Sample witness statement" title="Sample witness statement">
+        </div>
         <div class="document-content">
           <p class="document-title"><a href="#">Statement 1 from Linda THOMAS</a></p>
           <div class="document-meta">
@@ -28,7 +30,9 @@
     <div class="code-example" aria-hidden="true" role="presentation"><pre class="prettyprint lang-html"><code>
   &#x3C;div class=&#x22;document&#x22;&#x3E;
 
-    &#x3C;div class=&#x22;document-thumbnail&#x22;&#x3E;&#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;document-thumbnail&#x22;&#x3E;
+      &#x3C;img src=&#x22;public/images/document-thumbnail.jpg&#x22; alt=&#x22;Sample witness statement&#x22;&#x3E;
+    &#x3C;/div&#x3E;
 
     &#x3C;div class=&#x22;document-content&#x22;&#x3E;
 
