@@ -2828,7 +2828,7 @@ HTML Usage
   vertical-align: top;
 }
 .notification .icon + .notification-message {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .notification-confirmation {
   background-color: #28a197;
