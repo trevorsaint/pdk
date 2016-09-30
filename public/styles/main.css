@@ -1873,11 +1873,11 @@ input[type=number] {
     display: revert;
   }
 }
-.persist-info:before, .pagination:before, .document-small:before, .global-nav:before, .global-nav-list:before, .collapsibles-header:before, .persist-info:after, .pagination:after, .document-small:after, .global-nav:after, .global-nav-list:after, .collapsibles-header:after {
+.persist-info:before, .warning-banner:before, .pagination:before, .document-small:before, .global-nav:before, .global-nav-list:before, .collapsibles-header:before, .persist-info:after, .warning-banner:after, .pagination:after, .document-small:after, .global-nav:after, .global-nav-list:after, .collapsibles-header:after {
   content: '';
   display: table;
 }
-.persist-info:after, .pagination:after, .document-small:after, .global-nav:after, .global-nav-list:after, .collapsibles-header:after {
+.persist-info:after, .warning-banner:after, .pagination:after, .document-small:after, .global-nav:after, .global-nav-list:after, .collapsibles-header:after {
   clear: both;
 }
 
@@ -2291,12 +2291,47 @@ HTML Usage
 </div>
 
 */
+.warning-banner {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 400;
+  text-transform: none;
+  background-color: #df3034;
+  color: #fff;
+  padding: 0.52632em;
+}
+@media (min-width: 641px) {
+  .warning-banner {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.warning-banner-message {
+  color: #fff;
+  display: table-cell;
+}
+.warning-banner-message p {
+  font-weight: 700;
+  margin: 0;
+}
+.warning-banner .icon {
+  display: table-cell;
+  vertical-align: top;
+}
+.warning-banner .icon + .warning-banner-message {
+  padding-left: 0.625em;
+}
+
 /*
 
 HTML Usage
 
-<div class="warning-banner">
-  ... todo
+<div class="warning-banner" role="alert">
+  <i class="icon icon-alert" role="presentation" aria-hidden="true"></i>
+  <div class="warning-banner-message">
+    <p>Jo Cooper is working on this case &ndash; you must check with them before editing anything</p>
+  </div>
 </div>
 
 */
@@ -3271,6 +3306,17 @@ HTML Usage
     background-size: 100%;
   }
 }
+.icon-alert {
+  width: 20px;
+  height: 20px;
+  background-image: url("/public/images/icon-alert-white.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-alert {
+    background-image: url("/public/images/icon-alert-white-2x.png");
+    background-size: 100%;
+  }
+}
 
 /*
 
@@ -3283,6 +3329,8 @@ HTML Usage
 <i class="icon icon-important-white" role="presentation" aria-hidden="true"></i>
 
 <i class="icon icon-tick-white" role="presentation" aria-hidden="true"></i>
+
+<i class="icon icon-alert" role="presentation" aria-hidden="true"></i>
 
 */
 .personal-details [class*=heading] {
