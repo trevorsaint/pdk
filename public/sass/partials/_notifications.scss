@@ -36,7 +36,7 @@ $module: 'notification';
     vertical-align: top;
 
     + .#{$module}-message {
-      padding-left: 15px;
+      padding-left: em(15);
     }
 
   }

@@ -2872,7 +2872,7 @@ HTML Usage
   vertical-align: top;
 }
 .notification .icon + .notification-message {
-  padding-left: 15px;
+  padding-left: 0.78947em;
 }
 .notification-confirmation {
   background-color: #28a197;
@@ -3274,8 +3274,8 @@ HTML Usage
   }
 }
 .icon-important-white {
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   background-image: url("/public/images/icon-important-white.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -3285,8 +3285,8 @@ HTML Usage
   }
 }
 .icon-tick-white {
-  width: 31px;
-  height: 31px;
+  width: 30px;
+  height: 30px;
   background-image: url("/public/images/icon-tick-white.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -3317,6 +3317,28 @@ HTML Usage
     background-size: 100%;
   }
 }
+.icon-lock {
+  width: 30px;
+  height: 30px;
+  background-image: url("/public/images/icon-lock.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-lock {
+    background-image: url("/public/images/icon-lock-2x.png");
+    background-size: 100%;
+  }
+}
+.icon-lock-white {
+  width: 30px;
+  height: 30px;
+  background-image: url("/public/images/icon-lock-white.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .icon-lock-white {
+    background-image: url("/public/images/icon-lock-white-2x.png");
+    background-size: 100%;
+  }
+}
 
 /*
 
@@ -3330,7 +3352,13 @@ HTML Usage
 
 <i class="icon icon-tick-white" role="presentation" aria-hidden="true"></i>
 
+<i class="icon icon-complete" role="presentation" aria-hidden="true"></i>
+
 <i class="icon icon-alert" role="presentation" aria-hidden="true"></i>
+
+<i class="icon icon-lock" role="presentation" aria-hidden="true"></i>
+
+<i class="icon icon-lock-white" role="presentation" aria-hidden="true"></i>
 
 */
 .personal-details [class*=heading] {
